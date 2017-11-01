@@ -1,0 +1,25 @@
+.space-list--transition-enter-active,
+.space-list--transition-leave-active {
+    transform-origin: left top 0px;
+    transition: transform ease .2s, opacity ease .2s, top ease .2s;
+}
+
+.space-list--transition-enter,
+.space-list--transition-leave-active {
+    opacity: 0;
+    transform: scaleY(0);
+}
+
+
+//etl preview 
+.slide-fade-enter-active {
+  transition: all .3s ease;
+}
+.slide-fade-leave-active {
+  transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+}
+.slide-fade-enter, .slide-fade-leave-to
+/* .slide-fade-leave-active for below version 2.1.8 */ {
+  transform: translateY(10px);
+  opacity: 0;
+}
