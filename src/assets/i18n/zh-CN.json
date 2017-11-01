@@ -1,0 +1,606 @@
+{
+	"locales": {
+		"zh-CN": "CN",
+		"en-US": "EN",
+		"ja-JP": "JP"
+	},
+
+    "common":{
+        "save":"保存",
+        "discard": "放弃",
+        "search": "搜索",
+        "cancel": "取消",
+        "close":"关闭",
+        "apply": "应用",
+        "switch":"确认切换",
+        "confirm": "确认",
+        "no_data":"暂无数据",
+        "no_search_data":"未找到符合搜索条件的结果",
+        "remove":"删除",
+        "or":"Or",
+        "and":"And",
+        "auto":"自动",
+        "loading": "加载中...",
+        "on": "On",
+        "off": "Off",
+        "skip":"跳过",
+        "loading_error":"网络可能发生异常，请",
+        "retry":"重试",
+        "widget_list_error1":"面板加载失败，请",
+        "widget_list_error2":"刷新",
+        "widget_list_error3":"重试。",
+        "form":{
+            "email":"邮箱",
+            "password":"密码",
+            "email_placeholder":"请输入邮箱",
+            "password_placeholder":"请输入密码",
+            "old_password":"当前密码",
+            "new_password":"新密码",
+            "confirm_password":"确认新密码",
+            "submit":"提交",
+            "error":{
+                "password_null":"请输入密码",
+                "password_length":"请输入长度为6-20位的密码。",
+                "password_not_right":"密码输入有误。",
+                "password_not_match":"密码仅可包含字母、符号和数字。",
+                "new_old_not_match":"新密码与确认密码不匹配。",
+                "email_null":"请输入邮箱",
+                "email_not_match":"请输入有效邮箱",
+                "email_not_exist":"当前邮箱不存在",
+                "email_already_exist":"该邮箱已存在",
+                "system_error":"系统异常，Pt mind 工作人员正在解决！请您稍后尝试。如果需要帮助，请联系我们！"
+            }
+        },
+        "operationError": "操作异常",
+        "knowledge_base": "帮助中心",
+        "data_type": {
+            "STRING": "字符串",
+            "DATE": "日期",
+            "TIME": "时间",
+            "DATETIME": "日期时间",
+            "DURATION": "持续时间",
+            "NUMBER": "数字",
+            "PERCENT": "百分比",
+            "BOOLEAN": "布尔值",
+            "TIMESTAMP": "时间戳"
+        }
+    },
+    "dashboard": {
+        "add_widget": "添加widget",
+        "chart": "图表",
+        "richText": "富文本",
+        "heatmap": "Ptengine热图",
+        "header": {
+            "time": "面板时间范围",
+            "filter": "面板过滤",
+            "copy": "复制面板",
+            "share": "公开链分享",
+            "info": "详情",
+            "refresh": "更新数据",
+            "delete": "删除面板",
+            "refreshTip": "面板每20分钟自动更新。上次更新: {time}",
+            "updateSuccess": "面板更新成功",
+            "updateFailed": "面板更新失败"
+        },
+        "tips":{
+            "no_datasource":{
+                "title":"您当前没有任何面板以及数据源，在创建面板前，请先连接您的数据。",
+                "item1_title":"数据源",
+                "item1_content":"连接您来自不同云服务、数据库或者本地文件的数据。"
+            },
+            "no_panel":{
+                "title":"您当前没有任何面板，请创建面板。",
+                "item1_title":"面板",
+                "item1_content":"将您重要的商业数据制作成精致实时的面板，对您关心的各项数据进行实时监控。"
+            },
+            "no_widget":{
+                "title":"该面板当前没有widget，请选择要添加的widget类型。",
+                "item1_title":"图表",
+                "item1_content":"使用图表可视化展示您的数据。",
+                "item2_title":"富文本",
+                "item2_content":"为面板添加文字、图片或视频。",
+                "item3_title":"热图",
+                "item3_content":"将您Ptengine中的热图添加到面板中。"
+            }
+        },
+        "noauthority":{
+            "title": "您没有权限访问此页面",
+            "detail1": "此页面属于空间 ",
+            "detail2":"，请使用属于该空间成员的账号进行登录。",
+            "switch_account": "使用其他账号登录",
+            "current_account": "进入当前账号"
+        }
+    },
+
+    "widget": {
+        "info": {
+            "title": "widget详情",
+            "name": "名称",
+            "dsName": "数据源"
+        },
+        "edit": "编辑",
+        "copy": "复制",
+        "moveTo": "移动",
+        "delete": "删除",
+        "move": {
+            "title": "移动widget到面板",
+            "move": "移动"
+        },
+        "deleteConfirm": {
+            "title": "删除widget",
+            "content": "是否确认删除此widget？"
+        }
+    },
+
+    "share": {
+        "error": {
+            "pwdRequired": "请输入密码。",
+            "pwdError": "密码错误。"
+        },
+        "pwdPlaceholder": "密码",
+        "viewDashboard": "查看面板",
+        "pwdTitle": "此面板需要密码访问",
+        "pwdTitleTip": "请在以下输入框输入密码来查看此面板。",
+        "error_tips":{
+            "tips1":"面板公开链已失效",
+            "tips2":"该面板已经取消公开链分享或已经被删除。",
+            "tips3":"返回DataDeck"
+        },
+        "share": "社交分享"
+    },
+
+    "widget_editor": {
+        "header": {
+            "back": "返回面板",
+            "chose_ds": "数据源: ",
+            "save_tips_title":"未保存变更",
+            "save_tips_content": "您是否要保存对此widget的更改？",
+            "chose_ds_title":"选择一个数据源",
+            "chose_ds_tab_connection": "Connection",
+            "chose_ds_tab_dataset": "Dataset",
+            "chose_ds_datasource": "数据源",
+            "dataset_preview": "preview",
+            "auth_ds_tips1": "切换数据源将清空当前的设置，是否确认切换？",
+            "no_ds_tips1": "您尚未连接任何数据，请前往",
+            "no_ds_tips2": "数据源管理",
+            "no_ds_tips3": "页面进行连接。",
+            "connect_ds1": "连接",
+            "connect_ds2": "",
+            "default_name": "未命名Widget"
+        },
+        "graph":{
+            "no_data_tips_1":"请选择需要展示的数据字段"
+        },
+        "aside": {
+            "title_left": "基本",
+            "title_right": "样式",
+            "add_btn":"添加",
+            "drag_drop": "拖拽字段至此",
+            "drag_segment": "拖拽细分至此",
+            "refused_drag": "该字段不能拖拽至此",
+            "drag_drop_replace": "拖拽以替换字段",
+            "custom_fields": "计算字段",
+            "zoom_area":"区域",
+            "position_field": "地理字段",
+            "country": "国家",
+            "sort":"排序",
+            "sort_by":"排序依据",
+            "sort_ascending":"升序",
+            "sort_descending":"降序",
+            "sort_default_sequence":"默认顺序",
+            "filter_all":"全部",
+            "filter_apply_tip":"请设置过滤条件",
+            "filter_x_selected":"项已选",
+            "label":"别名",
+            "description": "描述",
+            "summarize":"计算方式",
+            "time_granularity":"时间粒度",
+            "title":{
+                "category":"分类",
+                "value": "值",
+                "x_axis": "X轴",
+                "y_axis": "Y轴",
+                "legend":"颜色分类",
+                "left_y_axis":"左Y轴",
+                "right_y_axis":"右Y轴",
+                "filter":"过滤",
+                "segment":"细分",
+                "target":"目标值",
+                "target_placeholder":"请输入目标值"
+            },
+            "time_range":{
+                "include_today":"包含今天",
+                "date_range":"时间范围",
+                "date_field":"日期字段",
+                "last":"过去",
+                "days":"天",
+                "custom_today1":"从 ",
+                "custom_today2":"到今天",
+                "today":"今天",
+                "yesterday":"昨天",
+                "this_week":"本周",
+                "last_week":"上周",
+                "this_month":"本月",
+                "last_month":"上月",
+                "all_time":"全部时间"
+            },
+            "segment":{
+                "segment":"细分",
+                "add_new_segment":"添加新细分",
+                "save_segment_in_GA":"Google Analytics中保存的细分",
+                "edit_segment":"编辑",
+                "remove_segment_title":"删除细分",
+                "remove_segment_tip":"删除此细分会影响所有使用此细分的widget，是否确认删除？",
+                "segment_name":"细分名称",
+                "default_name":"未命名细分",
+                "select_a_field":"选择字段",
+                "condition_setting":"条件设置",
+                "segment_tips":"请设置细分条件",
+                "switch_tip1":"修改细分条件会影响所有使用此细分的widget，是否确认修改？",
+                "switch_tip2":""
+            },
+            "style":{
+                "legend_max": "分类",
+                "show_date": "显示时间范围",
+                "double_axis" :{
+                    "title_left": "左Y轴",
+                    "title_right": "右Y轴",
+                    "chart": "图表类型",
+                    "show_label": "显示数据标签",
+                    "show_axis": "显示Y轴",
+                    "axis_min": "Y轴最小值",
+                    "axis_max": "Y轴最大值"
+                },
+                "show_label": "显示数据标签",
+                "bars_x": "X轴",
+                "bars_y": "Y轴",
+                "series": "颜色分类",
+                "region_name": "显示地区名称",
+                "show_colored_by": "显示图例",
+                "reverse": "反向目标",
+                "reverse_tip":"反向目标即目标值越小越好",
+                "show_others": "显示其他",
+                "show_total": "显示总值",
+                "total_value": "总值字段",
+                "total_value_tip":"总值是指值在当前时间范围内的整体情况。",
+                "show_y_axis": "显示Y轴",
+                "show_x_axis": "显示X轴",
+                "axis_min_y": "Y轴最小值",
+                "axis_max_y": "Y轴最大值",
+                "axis_min_x": "X轴最小值",
+                "axis_max_x": "X轴最大值",
+                "no_settings": "暂无可设置样式"
+            }
+        },
+
+        "error": {
+            "MSG_NOT_SELECT_FIELD":"请选择需要展示的数据字段",
+            "MSG_NO_DATA":"当前图表无数据",
+            "MSG_FAILED":"数据请求失败，请刷新重试",
+            "MSG_FAILED1":"数据请求失败，请刷新",
+            "MSG_FAILED2":"重试",
+            "MSG_FAILED3":"。",
+            "MSG_NO_AUTH":"无法找到当前数据源，请重新连接数据源。",
+            "MSG_GD_NO_ACCOUNT_AUTH":"无法找到当前数据源，请重新连接数据源。",
+            "MSG_GA_NO_ACCOUNT_AUTH":"无法找到当前数据源，请重新连接数据源。",
+            "MSG_GD_NO_SOURCE_AUTH":"无法找到当前数据源，请重新连接数据源。",
+            "MSG_GD_NO_SOURCE_EXISTS":"无法找到当前数据源，请重新连接数据源。",
+            "MSG_GA_NO_PROFILE_EXISTS":"无法找到当前数据源，请重新连接数据源。",
+            "MSG_DB_UNKNOWN_TABLE":"无法找到当前数据源，请重新连接数据源。",
+            "MSG_DB_NO_ACCOUNT_AUTH":"无法找到当前数据源，请重新连接数据源。",
+            "MSG_DB_NO_SOURCE_AUTH":"无法找到当前数据源，请重新连接数据源。",
+            "MSG_S3_ACCESS_DENIED":"无法找到当前数据源，请重新连接数据源。",
+            "MSG_SALESFORCE_REPORT_NOT_FOUND":"无法找到当前数据源，请重新连接数据源。",
+            "MSG_DB_LINK_FAILURE":"无法找到当前数据源，请重新连接数据源。",
+            "MSG_DB_ACCESS_DENIED":"无法找到当前数据源，请重新连接数据源。",
+            "MSG_DB_UNKNOWN_DATABASE":"无法找到当前数据源，请重新连接数据源。",
+            "MSG_BAD_REQUEST":"数据请求失败。",
+            "MSG_PTENGINE_METRICS_DIMENSIONS_NOT_MATCH":"该数据源服务无法支持当前字段的组合查询。",
+            "MSG_GA_METRICS_DIMENSIONS_NOT_MATCH":"该数据源服务无法支持当前字段的组合查询。",
+            "MSG_FACEBOOKAD_OUTOF_DELIVERYSIZE":"该数据源服务无法支持当前字段的组合查询。",
+            "MSG_FACEBOOKAD_OUTOF_ACTIONSIZE":"该数据源服务无法支持当前字段的组合查询。",
+            "MSG_GA_NOT_EXCEED_10_METRIC_7_DIMENSION":"由于Google Analytics API限制，指标选择最多10个，维度选择最多7个。",
+            "MSG_NOT_SELECT_METRICS":"使用当前数据源，请至少选择一个指标字段。",
+            "MSG_GA_USER_SEGMENTS_NOT_EXCEED_90_DAYS":"由于Google Analytics API限制，在使用细分条件查询时，时间范围请勿超出90天。",
+            "MSG_GA_FILTER_REGEX_NOT_EXCEED_128_CHAR":"由于Google Analytics API限制，过滤器使用正则表达式时，匹配条件不可以输入超过128个字符。",
+            "MSG_INVALID_PREDICATE_FIELD_NAME":"由于Google Adwords API的限制，当前过滤器使用的字段中，存在需要同时被使用到图表中的字段，以保证图表能够正常展示。",
+            "MSG_FACEBOOKAD_ACCESSTOKEN_EXPIRED1":"您的此Facebook Ads账号的授权已过期，请前往",
+            "MSG_FACEBOOKAD_ACCESSTOKEN_EXPIRED2":"Facebook Ads",
+            "MSG_FACEBOOKAD_ACCESSTOKEN_EXPIRED3":"管理进行重新授权。",
+            "MSG_DB_UNKNOWN_COLUMN":"无法找到当前所使用的数据列，请确认数据库情况。",
+            "MSG_REPORT_DIMENSION_SELECTED_ERROR":"我们无法根据该图表所使用的字段获取正确的数据，对于Summary和Matrix格式的Report，我们仅能获取该Report所提供的数据。",
+            "MSG_YAHOO_DATE_CAN_NOT_EXCEED_13_MONTHS":"Yahoo Ads YDN数据源不支持时间范围超过13个月以及包含今日数据的查询，请尝试修改您的时间范围。",
+            "MSG_YAHOO_DATE_CAN_NOT_INCLUDE_TODAY":"Yahoo Ads YDN数据源不支持时间范围超过13个月以及包含今日数据的查询，请尝试修改您的时间范围。",
+            "MSG_ALESFORCE_SOBJECT_SOQL_WHERE_LENGTH_OUTOF":"由于Salesforce API限制，过滤器匹配条件总共不能超过4000个字符，请适当减少过滤条件。",
+            "MSG_GA_EXPRESSION_TOTAL_NOT_EXCEED_4096_CHAR":"当前使用的过滤器或细分匹配条件表达式超过了最大长度4096条，请适当减少条件。",
+            "MSG_GA_SEGMENT_NOT_EXIST":"无法找到或无权限使用当前细分。",
+
+            "MSG_SALESFORCE_DS_SELECT_NO_PERMISSION1":"此账号无权访问数据，请",
+            "MSG_SALESFORCE_DS_SELECT_NO_PERMISSION2":"重新选择数据源",
+            "MSG_SALESFORCE_DS_SELECT_NO_PERMISSION3":"。",
+            "MSG_SALESFORCE_DS_SELECT_NO_PERMISSION4":"返回面板"
+        }
+    },
+
+    "panel": {
+        "filter": {
+            "add": "添加过滤器",
+            "keep": "保存到面板",
+            "back": "返回",
+            "save_scuccess": "保存成功！",
+            "create_success": "添加成功!",
+            "keep_tip": "将过滤器保存到面板，有权限的成员可以直接看到结果",
+            "is_empty": "当前无数据",
+            "is_not_exist": "该过滤器已失效。请校验过滤器选取的字段或数据源是否仍作用于该面板。"
+        },
+
+        "dashboard": {
+            "dashboard": "面板",
+            "deleteDashboard": "删除面板",
+            "duplicateDashboard": "复制面板",
+            "sharedLink": "公开链分享",
+            "dashboardDetails": "面板详情",
+            "rename": "重命名",
+            "folder": "文件夹",
+            "untitledDashboard": "未命名面板",
+            "untitledFolder": "未命名文件夹",
+            "manageData": "数据管理",
+
+            "deleteFolder": "删除文件夹",
+            "confirmDeleteDashboard_1": "是否确认删除面板”",
+            "confirmDeleteDashboard_2": "“?",
+
+            "deleteFolder": "删除文件夹",
+            "confirmDeleteFolder_1": "删除文件夹将会同时删除此文件夹下的所有面板，是否确定删除文件夹“",
+            "confirmDeleteFolder_2": "”？",
+
+            "title": "名称",
+            "description": "描述",
+
+            "noDashboards": "当前没有面板",
+            "panelNoExist": "当前面板或文件夹已不存在。"
+        },
+
+        "panelDetail": {
+            "dashboardDetails": "面板详情",
+            "title": "名称",
+            "created": "创建信息",
+            "lastModified": "修改信息",
+            "description": "描述",
+            "delete": "删除"
+        },
+
+        "sharedLink": {
+            "publicShareLink": "公开链分享",
+            "enableShareLink": "开启公开链",
+            "copyThisURLToShare": "复制此URL分享",
+            "copy": "复制",
+            "copiedToClipboard": "已拷贝到剪切板",
+            "passwordProtect": "密码保护",
+            "pleaseEnterPassword": "请输入密码",
+            "passwordSavedSuccessfully": "密码保存成功"
+        }
+    },
+
+    "charts": {
+        "rich_text": {
+            "placeholder": "双击添加富文本内容",
+            "tips_size":"选择的图片太大，目前仅支持300k以内的图片。",
+            "tips_format": "不支持所上传的图片格式，目前仅支持：JPEG/PNG/GIF。"
+        },
+        "heatmap": {
+            "title": "- Ptengine热图 -",
+            "label_name": "热图名称",
+            "default_name": "未命名热图",
+            "label_title": "Ptenigne热图的分享页面链接",
+            "help_tips": "在Ptengine的热图功能中，点击热图的“分享”按钮，使用生成的热图分享页面的链接。<a href=\"{moreUrl}\" target=\"_blank\">了解更多</a>",
+            "placeholder": "请复制Ptengine热图的分享页面链接并粘贴到此处。",
+            "page_title": "标题：",
+            "page_time": "时间：",
+            "page_filter": "过滤：",
+            "error_url": "您输入的链接有误，请修改后重试。<a href=\"{moreUrl}\" target=\"_blank\">了解更多</a>",
+            "error_phone_url": "您输入的链接有误，请确保您输入的是Ptengine热图的分享链接。",
+            "error_http_tip1": "您使用的浏览器阻止了此内容的正常显示。<br>您可以尝试进行以下操作：",
+            "error_http_tip2": "使用Chrome或Firefox浏览器，点击地址栏中的盾牌图标 <span class=\"chrome\"></span> 或锁图标 <span class=\"firefox\"></span> 以暂时解除保护并加载脚本。<a href=\"{moreHttps}\" target=\"_blank\">了解更多</a>",
+            "error_http_tip3": "在新窗口查看 <a href=\"{heatmapUrl}\" target=\"_blank\">浮层热图</a>。",
+            "error_http_phone_tip1": "您使用的浏览器阻止了此内容的正常显示。<br>您可以尝试进行以下操作：",
+            "error_http_phone_tip2": "在新窗口查看 <a href=\"{heatmapUrl}\" target=\"_blank\">浮层热图</a>。",
+            "error_http_phone_tip3": "使用PC的Chrome或Firefox浏览器访问此热图。"
+        }
+    },
+
+    "signin":{
+        "email":"邮箱",
+        "password":"密码",
+        "remember_me":"记住密码",
+        "log_in":"登录",
+        "return_to_login":"返回登录页",
+        "forgot_password":"忘记密码?",
+        "signup":"注册",
+        "error_tips":{
+            "email_format":"请输入正确的邮箱格式。",
+            "user_or_password_not_right":"邮箱或密码不正确。",
+            "user_not_right":"邮箱不存在,请重新输入。"
+        }
+    },
+
+    "signup":{
+        "MSG_SALESFORCE_DS_SELECT_NO_PERMISSION4":"返回面板",
+        "MSG_DB_ILLEGAL_USE_LONG_DATATYPE": "Illegal use of LONG datatype"
+    },
+    "forget_password":{
+        "submit": "提交",
+        "send_email_success": "邮件发送成功，请在24小时之内修改您的密码。",
+        "title": "请输入您的注册邮箱进行密码重置",
+        "email_no_activated_1":"该账户未激活。",
+        "email_no_activated_1":"重新发送激活邮件",
+        "email_no_activated_1":"激活账户。",
+        "email_no_exist":"当前邮箱不存在",
+        "reset_password": {
+            "tip_1": "重置密码",
+            "tip_2": "两次输入的密码不匹配",
+            "tip_3": "密码重置成功，5秒后自动跳转到登录页面"
+        }
+    },
+    "space":{
+        "space_menu":{
+            "space_member":"空间成员",
+            "space_detail":"空间详情",
+            "space_ip": "白名单",
+            "switch1":"切换到",
+            "switch2":""
+        },
+        "space_invite":{
+            "create_space":"创建空间",
+            "create_space_tip1":"在加入空间",
+            "create_space_tip2":"之前，",
+            "create_space_tip3":"请先创建您的DataDeck账户。",
+            "create_space_rule1":"确认注册则视为您同意",
+            "create_space_rule2":"使用条款",
+            "create_space_rule3":"和",
+            "create_space_rule4":"隐私条款",
+            "create_space_rule5":"",
+            "sign_up":"注册并加入空间"
+        },
+        "space_member":{
+            "title":"空间成员",
+            "owner":"所有者",
+            "remove_member1":"移除",
+            "remove_member2":"个成员",
+            "remove_member3":"",
+            "invite_success":"邀请发送成功",
+            "resend":"重新发送",
+            "send": "发送",
+            "delete_success": "成员移除成功",
+            "email_error": "请输入有效邮箱",
+            "versions_error": "您邀请的用户中存在使用老版本的用户。新老版本用户目前无法相互邀请加入空间。<a href=\"{helpLink}\" target=\"_blank\">了解更多</a>",
+            "email_repeat":"您已邀请过此成员"
+        },
+        "space_detail":{
+            "title":"空间详情",
+            "space_title":"空间名称",
+            "space_domain":"空间域名",
+            "week_start":"周起始日",
+            "sunday":"星期日",
+            "monday":"星期一",
+            "delete_space":"删除空间",
+            "week_tip":"周起始日影响一周的始末节点，例如，以周日为起始的情况下：时间范围选择上周或本周、曲线按照周展示时，一周的始末节点将为周日-周六",
+            "error":{
+                "already_exit_domin":"空间域名已存在。",
+                "domain_not_match":"空间域名只能包含数字、小写字母、\"-\"或者\"_\"，并且不能以\"-\"、\"_\"开头和结尾。"
+            },
+            "intercom": "开启客服系统"
+        },
+        "space_delete":{
+            "title":"删除空间",
+            "delete_space":"删除空间",
+            "delete_tips_title":"请依次确认删除空间会导致以下事情",
+            "delete_tips1":"此空间中的所有面板和数据源均会被删除。",
+            "delete_tips2":"所有的分享链接均会失效。",
+            "delete_tips3":"此空间将不再存在，并且无法恢复。",
+            "delete_tips4":"请确认您已了解此行为所带来的后果。"
+        },
+        "space_invitation":{
+            "title":"空间成员邀请",
+            "tip_1":"创建空间成功！",
+            "tip_2":"您可以邀请一些团队成员或工作伙伴一起协作管理数据。",
+            "email_title":"输入您想要邀请的邮箱",
+            "email_placeholder":"请输入邮箱",
+            "another_email":"添加其他成员",
+            "send_invitation":"发送邀请"
+        },
+        "space_create":{
+            "title":"创建空间",
+            "space_title_tip":"告诉我们如何称呼您的空间，以及您空间的URL。",
+            "space_title":"空间名称",
+            "space_domain":"空间域名",
+            "create_space":"创建空间",
+            "error": {
+                "title_null": "请输入空间名称",
+                "domain_null": "请输入空间域名"
+            }
+        },
+        "invalidate":{
+            "tips1":"邀请链接失效",
+            "tips2":"该邀请链接已经失效，请联系邀请人重新发送邀请。",
+            "tips3":"返回DataDeck"
+        },
+        "space_ip": {
+            "title": "白名单",
+            "sub_title": "当前IP地址：<span>{ip}</span><br>注意：空间所有者不受此白名单限制。",
+            "add_tips": "允许的IP地址",
+            "format_tips": "请添加允许访问此空间的IP地址或IP地址段。<br>例如：<span>10.0.0.1</span> 或 <span>10.0.0.1-10.0.0.255</span>。",
+            "ip_error_format": "请输入有效IP地址。",
+            "ip_error_empty": "请输入IP地址。",
+            "ip_error_has_been": "您已添加过此IP地址。",
+            "add_success": "IP地址添加成功",
+            "delete_success": "IP地址删除成功",
+            "add_ip_btn": "添加",
+            "limit_title": "无法访问空间",
+            "limit_tips": "您无法在当前的IP地址下访问空间{spaceName}，请联系您的空间所有者。",
+            "limit_switch_space": "切换至其他空间",
+            "limit_switch_account": "切换账号",
+            "limit_space_placeholder": "请选择空间"
+        }
+    },
+    "account":{
+        "settings":"账号设置",
+        "log_out":"退出登陆",
+        "account_setting":{
+            "title":"账号设置",
+            "user_name":"用户名",
+            "language":"语言",
+            "change_password":"修改密码",
+            "incorrectPassword": "密码输入有误。"
+        }
+    },
+    "datasetHistroy": {
+        "updatetime": "更新日期",
+        "description": "描述",
+        "result": "结果",
+        "updata_status": {
+            "success": "更新成功",
+            "failed": "更新失败"
+        }
+    },
+    "datasetEtl": {
+        "column_placeholder": "请选择列",
+        "columnName_placeholder": "请输入名称",
+        "no_match": "无匹配项",
+        "join": {
+            "join_type": "选择联表类型",
+            "match_columns": "选择匹配列",
+            "more_column": "添加另一组匹配列",
+            "match_error": "请选择列"
+        },
+        "groupby": {
+            "catagory": "请选择分类字段",
+            "metric": "请选择用来聚合的值字段",
+            "more_column": "添加另一组匹配列",
+            "column": {
+                "field": "字段",
+                "summarized": "聚合方式",
+                "name": "值字段名称"
+            },
+            "group_match": {
+                "match_error": "请选择列"
+            },
+            "metric_match": {
+                "match_error": "请选择列",
+                "rename": "请输入字段名称"
+            }
+        },
+        "appendrow": {
+            "target": "请选择目标表格",
+            "match_column": "匹配列",
+            "un_match": "未匹配字段是否包含于输出合表中"
+        },
+        "selectcolumn": {
+            "title": "请选择你想要保留的列",
+            "column": "请选择列",
+            "columnName": "列名称",
+            "anther": "添加一列",
+            "all": "添加全部"
+        }
+    }
+}

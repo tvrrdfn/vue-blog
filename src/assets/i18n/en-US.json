@@ -1,0 +1,615 @@
+{
+	"locales": {
+		"zh-CN": "CN",
+		"en-US": "EN",
+		"ja-JP": "JP"
+	},
+
+    "common":{
+        "save":"Save",
+        "discard": "Discard",
+        "search": "Search",
+        "cancel": "Cancel",
+        "close":"Close",
+        "apply": "Apply",
+        "switch":"Replace",
+        "confirm": "Confirm",
+        "no_data":"No data available",
+        "no_search_data":"Search not found",
+        "remove":"Remove",
+        "or":"Or",
+        "and":"And",
+        "auto":"Auto",
+        "loading": "Loading...",
+        "on": "On",
+        "off": "Off",
+        "skip":"Skip",
+        "loading_error":"There may be a network connection issue. Please ",
+        "retry":"try again",
+        "widget_list_error1":"Your dashboard failed to load. Please",
+        "widget_list_error2":"try again",
+        "widget_list_error3":".",
+        "form":{
+            "email":"Email",
+            "password":"Password",
+            "email_placeholder":"",
+            "password_placeholder":"Please enter password",
+            "old_password":"Current password",
+            "new_password":"New password",
+            "confirm_password":"Confirm new password",
+            "submit":"Submit",
+            "error":{
+                "password_null":"Please enter password",
+                "password_length":"Password must be 6-20 characters long.",
+                "password_not_right":"Incorrect password.",
+                "password_not_match":"Only letters, symbols and numbers can be included.",
+                "new_old_not_match":"New password does not match your confirmation password.",
+                "email_null":"Please enter email",
+                "email_not_match":"Please enter a valid email",
+                "email_not_exist":"Email doesn't exist",
+                "email_already_exist":"This email already exists",
+                "system_error":"System Error! Please try again later"
+            }
+        },
+        "operationError": "Operation error",
+        "knowledge_base": "Knowledge Base",
+        "data_type": {
+            "STRING": "Strings",
+            "DATE": "Date",
+            "TIME": "Time",
+            "DATETIME": "Date/time",
+            "DURATION": "Duration",
+            "NUMBER": "Number",
+            "PERCENT": "Percentage",
+            "BOOLEAN": "Boolean",
+            "TIMESTAMP": "Time stamp"
+        }
+    },
+
+    "dashboard": {
+        "add_widget": "Add a widget",
+        "chart": "Chart",
+        "richText": "Rich text",
+        "heatmap": "Ptengine heatmap",
+        "header": {
+            "time": "Dashboard date range",
+            "filter": "Dashboard filter",
+            "copy": "Duplicate dashboard",
+            "share": "Public share link",
+            "info": "Details",
+            "refresh": "Update dashboard",
+            "delete": "Delete dashboard",
+            "refreshTip": "Dashboard will be updated every 20 minute. Last updated: {time}",
+            "updateSuccess": "Dashboard updated successfully",
+            "updateFailed": "面板更新失败"
+        },
+        "tips":{
+            "no_datasource":{
+                "title":"You don’t have any dashboard and data source yet. Before create your dashboard, let’s start by connecting a data source.",
+                "item1_title":"Data source",
+                "item1_content":"Connect to all your data from different cloud services, database or local files."
+            },
+            "no_panel":{
+                "title":"You don’t have any dashboards yet. Please create your dashboard now.",
+                "item1_title":"Dashboard",
+                "item1_content":"Turn your key business data into beautiful, real-time dashboards. You can see how your business is doing at a glance."
+            },
+            "no_widget":{
+                "title":"No widget exists in this dashboard. Please select a widget type you want to add.",
+                "item1_title":"Chart",
+                "item1_content":"Visualize your data into beautiful charts.",
+                "item2_title":"Rich text",
+                "item2_content":"Add Text, graph or video to your dashboard.",
+                "item3_title":"Heatmap",
+                "item3_content":"Add your Ptengine Heatmap to your dashboard."
+            }
+        },
+        "noauthority":{
+            "title": "No right to get access to this page",
+            "detail1": "This page belongs to space ",
+            "detail2":". Please try to log in with another account which is the member of this space.",
+            "switch_account": "Log in with another account",
+            "current_account": "Get into current account"
+        }
+    },
+
+    "widget": {
+        "info": {
+            "title": "Widget details",
+            "name": "Title",
+            "dsName": "Data source"
+        },
+        "edit": "Edit",
+        "copy": "Duplicate",
+        "moveTo": "Move to",
+        "delete": "Delete",
+        "move": {
+            "title": "Move this widget to dashboard",
+            "move": "Move"
+        },
+        "deleteConfirm": {
+            "title": "Delete widget",
+            "content": "Are you sure you want to delete this widget?"
+        }
+
+    },
+
+    "share": {
+        "error": {
+            "pwdRequired": "Enter your password",
+            "pwdError": "The email and password do not match"
+        },
+        "pwdPlaceholder": "Password",
+        "viewDashboard": "View dashboard",
+        "pwdTitle": "This dashboard is password protected",
+        "pwdTitleTip": "Please enter the password below to view the dashboard.",
+        "error_tips":{
+            "tips1":"Invalid public share link",
+            "tips2":"The dashboard you're trying to view has not been shared with you or has been deleted.",
+            "tips3":"Back to DataDeck"
+        },
+        "share": "Social share"
+    },
+
+    "widget_editor": {
+        "header": {
+            "back": "Back to dashboard",
+            "chose_ds": "Data Source: ",
+            "save_tips_title":"Confirm unsaved changes",
+            "save_tips_content": "Your changes have not been saved. Do you want to save changes?",
+            "chose_ds_title":"Select a data source",
+            "chose_ds_tab_connection": "Connection",
+            "chose_ds_tab_dataset": "Dataset",
+            "chose_ds_datasource": "Data Source",
+            "dataset_preview": "preview",
+            "auth_ds_tips1": "Replacing a data source will delete all data in this widget.Do you wish to continue?",
+            "no_ds_tips1": "Data source not found.You can connect a data source from",
+            "no_ds_tips2": " Data Source Management page",
+            "no_ds_tips3": ".",
+            "connect_ds1": "Connect to",
+            "connect_ds2": "",
+            "default_name": "Unnamed widget"
+        },
+        "graph":{
+            "no_data_tips_1":"Select the fields you want to visualize."
+        },
+        "aside": {
+            "title_left": "Data",
+            "title_right": "Display",
+            "add_btn":"Add",
+            "drag_drop": "Drag data fields here",
+            "drag_segment": "Drag your segments here",
+            "refused_drag": "Cannot drag this field here",
+            "drag_drop_replace": "Drag & Drop to replace",
+            "custom_fields": "Calculated field",
+            "zoom_area":"Region",
+            "position_field": "Position field",
+            "country": "Country",
+            "sort":"Sort",
+            "sort_by":"Sort by",
+            "sort_ascending":"Ascending (A→Z)",
+            "sort_descending":"Descending (Z→A)",
+            "sort_default_sequence":"Default",
+            "filter_all":"Select All",
+            "filter_apply_tip":"Please set filter conditions",
+            "filter_x_selected":"selected",
+            "label":"Display name",
+            "description": "Description",
+            "summarize":"Summarize value by",
+            "time_granularity":"Group data by",
+            "title":{
+                "category":"Category",
+                "value": "Metric",
+                "x_axis": "X-axis",
+                "y_axis": "Y-axis",
+                "legend":"Colored by",
+                "left_y_axis":"Left Y-axis",
+                "right_y_axis":"Right Y-axis",
+                "filter":"Filter",
+                "segment":"Segment",
+                "target":"Goal value",
+                "target_placeholder":"Please set goal value"
+            },
+            "time_range":{
+                "include_today":"Include today",
+                "date_range":"Date range",
+                "date_field":"Date field",
+                "last":"Last",
+                "days":"Days",
+                "custom_today1":"From ",
+                "custom_today2":" to today",
+                "today":"Today",
+                "yesterday":"Yesterday",
+                "this_week":"This week",
+                "last_week":"Last week",
+                "this_month":"This month",
+                "last_month":"Last month",
+                "all_time":"All time"
+            },
+            "segment":{
+                "segment":"Segment builder",
+                "add_new_segment":"Add new segment",
+                "save_segment_in_GA":"Saved segment in Google Analytics",
+                "edit_segment":"Edit",
+                "remove_segment_title":"Remove segment",
+                "remove_segment_tip":"If you remove this segment, all widgets using this segment will be affected. Are you sure you want to continue?",
+                "segment_name":"Segment title",
+                "default_name":"Untitled segment",
+                "select_a_field":"Select a field",
+                "condition_setting":"Condition setting",
+                "segment_tips":"Please set the segment condition",
+                "switch_tip1":"If you modify this segment, all widgets using this segment will be affected. Are you sure you want to continue?",
+                "switch_tip2":""
+            },
+            "style":{
+                "legend_max": "Categories",
+                "show_date": "Show date",
+                "double_axis" :{
+                    "title_left": "Left Y-axis",
+                    "title_right": "Right Y-axis",
+                    "chart": "Chart type",
+                    "show_label": "Show data labels",
+                    "show_axis": "Show Y-axis",
+                    "axis_min": "Y-axis min",
+                    "axis_max": "Y-axis max"
+                },
+                "show_label": "Show data labels",
+                "bars_x": "X-axis",
+                "bars_y": "Y-axis",
+                "series": "Color series",
+                "region_name": "Show region name",
+                "show_colored_by": "Show legend",
+                "reverse": "Reverse target",
+                "reverse_tip":"Reverse Target means that the smaller the target value is, the better it is.",
+                "show_others": "Show other",
+                "show_total": "Summary value",
+                "total_value": "Display value for",
+                "total_value_tip":"Show the summary value within the current date range.",
+                "show_y_axis": "Show Y-axis",
+                "show_x_axis": "Show X-axis",
+                "axis_min_y": "Y-axis min",
+                "axis_max_y": "Y-axis max",
+                "axis_min_x": "X-axis min",
+                "axis_max_x": "X-axis max",
+                "no_settings": "No style can be set "
+            }
+        },
+
+        "error": {
+            "MSG_NOT_SELECT_FIELD":"Select the fields you want to visualize.",
+            "MSG_NO_DATA":"The current chart has no data",
+            "MSG_FAILED":"Connection failed. Try again later.",
+            "MSG_FAILED1":"Connection failed. ",
+            "MSG_FAILED2":"Try again",
+            "MSG_FAILED3":" later.",
+            "MSG_NO_AUTH":"The data source used in this widget cannot be found or accessed. Please select another data source for this widget.",
+            "MSG_GD_NO_ACCOUNT_AUTH":"The data source used in this widget cannot be found or accessed. Please select another data source for this widget.",
+            "MSG_GA_NO_ACCOUNT_AUTH":"The data source used in this widget cannot be found or accessed. Please select another data source for this widget.",
+            "MSG_GD_NO_SOURCE_AUTH":"The data source used in this widget cannot be found or accessed. Please select another data source for this widget.",
+            "MSG_GD_NO_SOURCE_EXISTS":"The data source used in this widget cannot be found or accessed. Please select another data source for this widget.",
+            "MSG_GA_NO_PROFILE_EXISTS":"The data source used in this widget cannot be found or accessed. Please select another data source for this widget.",
+            "MSG_DB_UNKNOWN_TABLE":"The data source used in this widget cannot be found or accessed. Please select another data source for this widget.",
+            "MSG_DB_NO_ACCOUNT_AUTH":"The data source used in this widget cannot be found or accessed. Please select another data source for this widget.",
+            "MSG_DB_NO_SOURCE_AUTH":"The data source used in this widget cannot be found or accessed. Please select another data source for this widget.",
+            "MSG_S3_ACCESS_DENIED":"The data source used in this widget cannot be found or accessed. Please select another data source for this widget.",
+            "MSG_SALESFORCE_REPORT_NOT_FOUND":"The data source used in this widget cannot be found or accessed. Please select another data source for this widget.",
+            "MSG_DB_LINK_FAILURE":"The data source used in this widget cannot be found or accessed. Please select another data source for this widget.",
+            "MSG_DB_ACCESS_DENIED":"The data source used in this widget cannot be found or accessed. Please select another data source for this widget.",
+            "MSG_DB_UNKNOWN_DATABASE":"The data source used in this widget cannot be found or accessed. Please select another data source for this widget.",
+            "MSG_BAD_REQUEST":"Data request failed.",
+            "MSG_PTENGINE_METRICS_DIMENSIONS_NOT_MATCH":"The selected fileds cannot be queried as a combination.",
+            "MSG_GA_METRICS_DIMENSIONS_NOT_MATCH":"The selected fileds cannot be queried as a combination.",
+            "MSG_FACEBOOKAD_OUTOF_DELIVERYSIZE":"The selected fileds cannot be queried as a combination.",
+            "MSG_FACEBOOKAD_OUTOF_ACTIONSIZE":"The selected fileds cannot be queried as a combination.",
+            "MSG_GA_NOT_EXCEED_10_METRIC_7_DIMENSION":"Due to the Google Analytics API limitation, you can only select up to 7 dimensions and 10 metrics for each report. ",
+            "MSG_NOT_SELECT_METRICS":"Please select at least one metric for current data source.",
+            "MSG_GA_USER_SEGMENTS_NOT_EXCEED_90_DAYS":"The selected date range must be shorter than 90 days when using Segment.",
+            "MSG_GA_FILTER_REGEX_NOT_EXCEED_128_CHAR":"Due to the Google Analytics API limitation, you can only select up to 128 characters while using the 'RegEx' filter function.",
+            "MSG_INVALID_PREDICATE_FIELD_NAME":"Due to Google Adwords API restrictions, the fields currently used in filter exists the field that need to be used in the chart.",
+            "MSG_FACEBOOKAD_ACCESSTOKEN_EXPIRED1":"The authorization of your Facebook Ads account has been expired. Please go to",
+            "MSG_FACEBOOKAD_ACCESSTOKEN_EXPIRED2":" Manage Facebook Ads ",
+            "MSG_FACEBOOKAD_ACCESSTOKEN_EXPIRED3":"to reauthorize your account.",
+            "MSG_DB_UNKNOWN_COLUMN":"No relevant data was found. Please check your database status.",
+            "MSG_REPORT_DIMENSION_SELECTED_ERROR":"we cannot get access to the right data for the selected fields in the chart. For Summary report and Metrix report, we can only get access to the data offered in the your report.",
+            "MSG_YAHOO_DATE_CAN_NOT_EXCEED_13_MONTHS":"Time range including today and larger than 13 months is not available for Yahoo Ads YDN data source. Please modify the time range.",
+            "MSG_YAHOO_DATE_CAN_NOT_INCLUDE_TODAY":"Time range including today and larger than 13 months is not available for Yahoo Ads YDN data source. Please modify the time range.",
+            "MSG_ALESFORCE_SOBJECT_SOQL_WHERE_LENGTH_OUTOF":"Due to the Salesforce API restrictions, when using Filter function, the condition cannot be longer than 4000 characters. Please reduce the filter conditions.",
+            "MSG_GA_EXPRESSION_TOTAL_NOT_EXCEED_4096_CHAR":"Filter or segment expression exceeds max size of 4096. Please reduce the condions.",
+            "MSG_GA_SEGMENT_NOT_EXIST":"Segment currently used cannot be found or user have no permission for this segment.",
+
+            "MSG_SALESFORCE_DS_SELECT_NO_PERMISSION1":"This account does not have permission for data. Please ",
+            "MSG_SALESFORCE_DS_SELECT_NO_PERMISSION2":"select another data source",
+            "MSG_SALESFORCE_DS_SELECT_NO_PERMISSION3":".",
+            "MSG_SALESFORCE_DS_SELECT_NO_PERMISSION4":"Back to dashboard",
+            "MSG_DB_ILLEGAL_USE_LONG_DATATYPE": "Illegal use of LONG datatype"
+        }
+    },
+    "panel": {
+        "filter": {
+            "add": "Add filter",
+            "keep": "Keep on Dashboard",
+            "back": "Back",
+            "save_scuccess": "Save successfully！",
+            "create_success": "Add successfully！",
+            "keep_tip": "Saving filters to Dashboard. Anyone with access will see the filtered results directly.",
+            "is_empty": "No data",
+            "is_not_exist": "This filter is innvalid. please check the field or the data source is wokrked in this dashboard"
+        },
+
+        "dashboard": {
+            "dashboard": "Dashboard",
+            "deleteDashboard": "Delete dashboard",
+            "duplicateDashboard": "Duplicate dashboard",
+            "sharedLink": "Shared link",
+            "dashboardDetails": "Dashboard details",
+            "rename": "Rename",
+            "folder": "Folder",
+            "untitledDashboard": "Untitled dashboard",
+            "untitledFolder": "Untitled folder",
+            "manageData": "Manage data",
+
+            "deleteFolder": "Delete folder",
+            "confirmDeleteDashboard_1": "Are you sure you want to delete dashboard\"",
+            "confirmDeleteDashboard_2": "\"?",
+
+            "deleteFolder": "Delete folder",
+            "confirmDeleteFolder_1": "By deleting folder\"",
+            "confirmDeleteFolder_2": "\", it will permanently delete the folder and all its contents. Are you sure you’d like to proceed?",
+
+            "title": "Title",
+            "description": "Description",
+
+            "noDashboards": "You have no dashboards",
+            "panelNoExist": "Current dashboard or folder does not exist."
+        },
+
+        "panelDetail": {
+            "dashboardDetails": "Dashboard details",
+            "title": "Title",
+            "created": "Created",
+            "lastModified": "Last modified",
+            "description": "Description",
+            "delete": "Delete"
+        },
+
+        "sharedLink": {
+            "publicShareLink": "Public share link",
+            "enableShareLink": "Enable share link",
+            "copyThisURLToShare": "Copy this URL to share",
+            "copy": "Copy",
+            "copiedToClipboard": "Copied to Clipboard",
+            "passwordProtect": "Password protect",
+            "pleaseEnterPassword": "Please enter password",
+            "passwordSavedSuccessfully": "Password saved successfully"
+        }
+    },
+
+    "charts": {
+        "rich_text": {
+            "placeholder": "Double click to add rich text",
+            "tips_size":"Image size is too large, maximum size 300k.",
+            "tips_format": "Image type is not supported. We only support: JPEG/PNG/GIF."
+        },
+        "heatmap": {
+            "title": "- Ptengine heatmap -",
+            "label_name": "Heatmap title",
+            "default_name": "Unnamed heatmap",
+            "label_title": "Link of Ptengine heatmap in share page",
+            "help_tips": "Clicking the 'share' button on the Heatmap feature in Ptengine and then using the URL of the share page. <a href=\"{moreUrl}\" target=\"_blank\">Learn more</a>",
+            "placeholder": "Please copy the link of your Ptenigne heatmap in share page, and then paste it here.",
+            "page_title": "Title:",
+            "page_time": "Date:",
+            "page_filter": "Filter:",
+            "error_url": "The link you entered is invalid, please make sure you entered the link of Ptengine heatmap in share page. <a href=\"{moreUrl}\" target=\"_blank\">Learn more</a>",
+            "error_phone_url": "The link you entered is invalid, please check and try again.",
+            "error_http_tip1": "Your browser prevents this content from being displayed.<br>You can work around by:",
+            "error_http_tip2": "Using Chrome or Firefox broswer and clicking the shield icon <span class=\"chrome\"></span> or lock icon <span class=\"firefox\"></span> at the address bar to disable protection for now to load scripts. <a href=\"{moreHttps}\" target=\"_blank\">Learn more</a>",
+            "error_http_tip3": "Viewing the <a href=\"{heatmapUrl}\" target=\"_blank\">Overlay Heatmap</a>in new tab.",
+            "error_http_phone_tip1": "Your browser prevents this content from being displayed.<br>You can work around by:",
+            "error_http_phone_tip2": "Viewing the <a href=\"{heatmapUrl}\" target=\"_blank\">Overlay Heatmap</a>in new tab.",
+            "error_http_phone_tip3": "Viewing the heatmap using Chrome or Firefox on PC."
+        }
+    },
+
+    "signin": {
+        "email":"Email",
+        "password":"Password",
+        "remember_me":"Remember me",
+        "log_in":"Log in",
+        "return_to_login":"Return to Login Page",
+        "forgot_password":"Forgot your password?",
+        "signup":"Create a new account",
+        "error_tips":{
+            "email_format":"Enter a valid email address",
+            "user_or_password_not_right":"Incorrect email or password",
+            "user_not_right":"Email doesn't exist"
+        }
+    },
+
+    "signup":{
+        "MSG_SALESFORCE_DS_SELECT_NO_PERMISSION4":"Back to dashboard",
+        "MSG_DB_ILLEGAL_USE_LONG_DATATYPE": "Illegal use of LONG datatype"
+    },
+    "forget_password":{
+        "submit": "Submit",
+        "send_email_success":"We have sent you an email with a link to reset the password.",
+        "title": "Enter your email to reset your password ",
+        "email_no_activated_1":"This account haven’t been activated. ",
+        "email_no_activated_1":"Resend activation email",
+        "email_no_activated_1":".",
+        "email_no_exist":"Email doesn't exist",
+        "reset_password": {
+            "tip_1": "Reset your password",
+            "tip_2": "Password didn't match",
+            "tip_3": "Your password has been reset. You'll be redirected to the login page in 5 seconds."
+        }
+    },
+    "space":{
+        "space_menu":{
+            "space_member":"Space members",
+            "space_detail":"Space details",
+            "space_ip": "Whitelist",
+            "switch1":"Switch to",
+            "switch2":""
+        },
+        "space_invite":{
+            "create_space":"Create your account",
+            "create_space_tip1":"Before you join to Space ",
+            "create_space_tip2":", ",
+            "create_space_tip3":"please create your DataDeck account first.",
+            "create_space_rule1":"By signing up, you agree to",
+            "create_space_rule2":" Terms of Use",
+            "create_space_rule3":" and ",
+            "create_space_rule4":"Privacy Policy.",
+            "create_space_rule5":"",
+            "sign_up":"Sign up and join the space"
+        },
+        "space_member":{
+            "title":"Space members",
+            "owner":"owner",
+            "remove_member1":"Remove",
+            "remove_member2":"member",
+            "remove_member3":"s",
+            "invite_success":"Invitation sent successfully",
+            "resend":"Resend",
+            "send": "Send",
+            "delete_success": "member(s) removed successfully",
+            "email_error": "Please enter a valid email",
+            "versions_error": "Currently, it's not possible to invite users using the Older version to this Space. <a href=\"{helpLink}\" target=\"_blank\">Learn more",
+            "email_repeat":" This email has been invited"
+        },
+        "space_detail":{
+            "title":"Space details",
+            "space_title":"Space name",
+            "space_domain":"Space URL",
+            "week_start":"Your business week starts from",
+            "sunday":"Sunday",
+            "monday":"Monday",
+            "delete_space":"Delete space",
+            "week_tip":"The start day (i.e. Sunday, Monday) determines which day your weekly data starts on.",
+            "error":{
+                "already_exit_domin":"This space URL already exists.",
+                "domain_not_match":"Space URL can only have lowercase letters, numbers and dashes, and cannot start and end with a dash."
+            },
+            "intercom": "Enable customer messaging feature"
+        },
+        "space_delete":{
+            "title":"Delete space",
+            "delete_space":"Delete space",
+            "delete_tips_title":"Please confirm that deleting space will lead to following things",
+            "delete_tips1":"All dashboards and data sources in this space will be deleted.",
+            "delete_tips2":"All share links will be inaccessible.",
+            "delete_tips3":"This space will no longer exist and this cannot be undone.",
+            "delete_tips4":"Please confirm that you understand the ramifications of your action."
+        },
+        "space_invitation":{
+            "title":"Space members invitations",
+            "tip_1":"Your space has been created successfully!",
+            "tip_2":"Now invite some of your team members or coworkers who can manage data with you.",
+            "email_title":"Enter emails that you want to invite",
+            "email_placeholder":"Please enter email",
+            "another_email":"Add another member",
+            "send_invitation":"Send invitations"
+        },
+        "space_create":{
+            "title":"Create your account",
+            "space_title_tip":"Tell us what is your space called and what URL do you want for your space.",
+            "space_title":"Space name",
+            "space_domain":"Space URL",
+            "create_space":"Create space",
+            "error": {
+                "title_null": "Please enter space name",
+                "domain_null": "Please enter space URL"
+            }
+        },
+        "invalidate":{
+            "tips1":"Invitation link expired",
+            "tips2":"This invitation link has expired. You can apply for resending the invitation.",
+            "tips3":"Back to DataDeck"
+        },
+        "space_ip": {
+            "title": "Whitelist",
+            "sub_title": "Current IP address: <span>{ip}</span><br>Note: The whitelist is not applicable to the space owner.",
+            "add_tips": "Allowed IP address",
+            "format_tips": "Please enter the IP addresses or a range of valid IP addresses allowed to visit current Space. <br>Example: <span>10.0.0.1</span> or <span>10.0.0.1-10.0.0.255</span>.",
+            "ip_error_format": "Please enter a valid IP address.",
+            "ip_error_empty": "Please enter an IP address.",
+            "ip_error_has_been": "This IP address has been added.",
+            "add_success": "IP address added successfully",
+            "delete_success": "IP address removed successfully",
+            "add_ip_btn": "Add",
+            "limit_title": "No right to get access to this Space",
+            "limit_tips": "You cannot access Space {spaceName} under the current IP address. Please contact the Space owner.",
+            "limit_switch_space": "Switch to another Space",
+            "limit_switch_account": "Switch account",
+            "limit_space_placeholder": "Please select a Space"
+        }
+    },
+    "account":{
+        "settings":"Account settings",
+        "log_out":"Log out",
+        "account_setting":{
+            "title":"Account settings",
+            "user_name":"Username",
+            "language":"Language",
+            "change_password":"Change password",
+            "incorrectPassword": "Incorrect password."
+        }
+    },
+    "datasetHistroy": {
+        "updatetime": "Update date",
+        "description": "Description",
+        "result": "Result",
+        "updata_status": {
+            "success": "Data updated successfully",
+            "failed": "your connection is not accessible,Please check your connection"
+        }
+    },
+    "datasetEtl": {
+        "column_placeholder": "Please select column",
+        "columnName_placeholder": "Please input your column name",
+        "no_matched": "No matched",
+        "join": {
+            "join_type": "Select the join type",
+            "match_columns": "Select the matching columns",
+            "more_column": "Match another column",
+            "match_error": "Please select a column"
+        },
+        "groupby": {
+            "catagory": "Select what columns identity the grouping",
+            "metric": "Select a column to aggregate",
+            "more_column": "Match another column",
+            "column": {
+                "field": "Filed",
+                "summarized": "Summarized by",
+                "name": "Column name"
+            },
+            "group_match": {
+                "match_error": "Please select a column"
+            },
+            "metric_match": {
+                "match_error": "Please select a column",
+                "rename": "Please input your name"
+            }
+        },
+        "appendrow": {
+            "target": "Select the target table in this append",
+            "match_column": "Matching column",
+            "un_match": "include unmatched columns in the other table"
+        },
+        "selectcolumn": {
+            "title": "Select columns you want to keep",
+            "column": "Select column",
+            "columnName": "Column name",
+            "anther": "Anther column",
+            "all": "all"
+        },
+        "calculatedfield": {
+			"formula": "Formula",
+			"fields": "Fields",
+			"functions": "Functions",
+			"name_column": "Name the calculated column",
+			"code_formula": "Enter formulas to create calculated column"
+		}
+    }
+}

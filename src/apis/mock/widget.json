@@ -1,0 +1,151 @@
+{
+    "success": true,
+    "data": {
+        "panelId": "19b4541f-776d-4da3-89cb-c9151d7a2571",
+        "widgetId": "b0d0ad0d-42af-4a8b-8977-a59a2ce63680",
+        "spaceId": "5c463ee8-7a56-438c-857f-4b220d41d763",
+        "dsConnectionId": "cb9d5cdf-7f94-452b-a49e-12b15a4e6156",
+        "name": "New Users By Date And User Type",
+        "graphType": "line",
+        "sort": {
+            "uuid": "7ef94741-e241-4907-8585-8572646189ae",
+            "order": "asc"
+        },
+        "filters": [{
+            "id": "8124531b-1c3a-4d9b-adcf-171375592609",
+            "uuid": "17ef94741-e241-4907-8585-8572646189ae",
+            "fieldId": "130",
+            "name": "Date",
+            "dataType": "NUMBER",
+            "calculateType": null,
+            "dataFormat": "yyyy-MM-dd",
+            "extra": {
+                "type": "dimension"
+            },
+            "type": "filter",
+            "alias": null,
+            "granularity": null,
+            "containsFunc": null,
+            "items": [{
+                "key": "number",
+                "code": "小于",
+                "value": ["100"]
+            }]
+        }],
+        "time": {
+            "code": "past",
+            "value": "7",
+            "isIncludeToday": true,
+            "field": null
+        },
+        "fields": [
+            {
+                "id": "8124531b-1c3a-4d9b-adcf-171375592609",
+                "uuid": "7ef94741-e241-4907-8585-8572646189ae",
+                "fieldId": "130",
+                "name": "Date",
+                "dataType": "DATE",
+                "calculateType": null,
+                "dataFormat": "yyyy-MM-dd",
+                "extra": {
+                    "type": "dimension"
+                },
+                "alias": null,
+                "granularity": {
+                    "type": "time",
+                    "value": "day"
+                },
+                "labelName": "DAY",
+                "type": "xAxis",
+                "containsFunc": null
+            },
+            {
+                "id": "f97e5280-31f1-445f-a6b2-ce1659428659",
+                "uuid": "f9f8cacbfd-d018-497c-8951-657f74d191f2",
+                "fieldId": "2",
+                "name": "name01",
+                "dataType": "NUMBER",
+                "calculateType": "sum",
+                "dataFormat": null,
+                "extra": {
+                    "type": "metrics"
+                },
+                "labelName": "SUM",
+                "alias": null,
+                "granularity": null,
+                "type": "yAxis",
+                "containsFunc": null
+            },
+            {
+                "id": "f97e5280-31f1-445f-a6b2-ce1659428659",
+                "uuid": "f9f8cacb-d018-497c-8951-657f74d191f2",
+                "fieldId": "2",
+                "name": "name02",
+                "dataType": "NUMBER",
+                "calculateType": "average",
+                "dataFormat": null,
+                "labelName": "AVG",
+                "extra": {
+                    "type": "metrics"
+                },
+                "alias": null,
+                "granularity": null,
+                "type": "yAxis",
+                "containsFunc": null
+            },
+            {
+                "id": "de280d6d-95d8-45e0-a971-19a03cff20f6",
+                "uuid": "943570df-01c2-451c-b94c-b740f8ce3ae9",
+                "fieldId": "1",
+                "name": "User Type",
+                "dataType": "STRING",
+                "calculateType": "counta",
+                "dataFormat": null,
+                "extra": {
+                    "type": "dimension"
+                },
+                "labelName": "COUNTA",
+                "alias": null,
+                "granularity": null,
+                "type": "legend",
+                "containsFunc": null
+            }
+        ],
+        "uid": null,
+        "isTitleUpdate": "0",
+        "settings": {
+            "date": {
+                "visible": true
+            },
+            "total": {
+                "visible": true,
+                "item": "field uuid"
+            },
+            "xAxis": {
+                "visible": true
+            },
+            "yAxis": {
+                "leftYAxis": {
+                    "min": 100,
+                    "max": 1000,
+                    "visible": true
+                }
+            },
+            "maxLimit": {
+                "d1": {
+                    "value": 80,
+                    "showOther": true
+                },
+                "d2": {
+                    "value": 5
+                }
+            },
+            "legend": {
+                "visible": true
+            },
+            "label": {
+                "visible": true
+            }
+        }
+    }
+}

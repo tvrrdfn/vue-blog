@@ -1,0 +1,95 @@
+{
+    "data": [
+        {
+            "dsCode": "googleanalysis",
+            "dsId": 1,
+            "dsName": "Google Analytics"
+        },
+        {
+            "dsCode": "googledrive",
+            "dsId": 6,
+            "dsName": "Google Drive"
+        },
+        {
+            "dsCode": "s3",
+            "dsId": 20,
+            "dsName": "Amazon S3"
+        },
+        {
+            "dsCode": "googleadsense",
+            "dsId": 28,
+            "dsName": "Google Adsense"
+        },
+        {
+            "dsCode": "mailchimp",
+            "dsId": 27,
+            "dsName": "MailChimp"
+        },
+        {
+            "dsCode": "yahooAdsYDN",
+            "dsId": 30,
+            "dsName": "Yahoo Ads YDN"
+        },
+        {
+            "dsCode": "yahooAdsSS",
+            "dsId": 31,
+            "dsName": "Yahoo Ads Sponsored Search"
+        },
+        {
+            "dsCode": "googleadwords",
+            "dsId": 3,
+            "dsName": "Google Adwords"
+        },
+        {
+            "dsCode": "stripe",
+            "dsId": 25,
+            "dsName": "Stripe"
+        },
+        {
+            "dsCode": "bigquery",
+            "dsId": 14,
+            "dsName": "Google BigQuery"
+        },
+        {
+            "dsCode": "upload",
+            "dsId": 4,
+            "dsName": "Excel/CSV "
+        },
+        {
+            "dsCode": "mysql",
+            "dsId": 5,
+            "dsName": "MySQL"
+        },
+        {
+            "dsCode": "mysqlAmazonRds",
+            "dsId": 7,
+            "dsName": "Amazon RDS for MySQL"
+        },
+        {
+            "dsCode": "redshift",
+            "dsId": 9,
+            "dsName": "Amazon Redshift"
+        },
+        {
+            "dsCode": "auroraAmazonRds",
+            "dsId": 10,
+            "dsName": "Amazon RDS for Aurora"
+        },
+        {
+            "dsCode": "postgre",
+            "dsId": 8,
+            "dsName": "PostgreSQL"
+        },
+        {
+            "dsCode": "s3",
+            "dsId": 20,
+            "dsName": "Amazon S3"
+        },
+        {
+            "dsCode": "sqlserver",
+            "dsId": 32,
+            "dsName": "SQL Server"
+        }
+    ],
+    "success": true
+}

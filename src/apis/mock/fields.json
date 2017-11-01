@@ -1,0 +1,38 @@
+{
+    "success": true,
+    "data": {
+        "id": -1,
+        "child": [
+            {
+                "id": "8124531b-1c3a-4d9b-adcf-171375592609",
+                "fieldId": "130",
+                "name": "Date",
+                "dataType": "DATE",
+                "calculateType": null,
+                "dataFormat": "yyyy-MM-dd",
+                "extra": {
+                    "type": "dimension"
+                },
+                "labelName": "",
+                "alias": null,
+                "granularity": null,
+                "containsFunc": null
+            },
+            {
+                "id": "f97e5280-31f1-445f-a6b2-ce1659428659",
+                "fieldId": "2",
+                "name": "New Users",
+                "dataType": "NUMBER",
+                "calculateType": null,
+                "dataFormat": null,
+                "extra": {
+                    "type": "metrics"
+                },
+                "labelName": "",
+                "alias": null,
+                "granularity": null,
+                "containsFunc": null
+            }
+        ]
+    }
+}

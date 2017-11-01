@@ -1,0 +1,407 @@
+{
+    "success": true,
+    "data": {
+        "config": {
+            "widgetEditor": {
+                "calculateType": [
+                    {
+                        "name": "SUM",
+                        "code": "sum"
+                    },
+                    {
+                        "name": "AVG",
+                        "code": "average"
+                    },
+                    {
+                        "name": "MAX",
+                        "code": "max"
+                    },
+                    {
+                        "name": "MIN",
+                        "code": "min"
+                    },
+                    {
+                        "name": "COUNTA",
+                        "code": "counta"
+                    },
+                    {
+                        "name": "COUNTUNIQUE",
+                        "code": "countunique"
+                    },
+                    {
+                        "name": "STDEV",
+                        "code": "stdev"
+                    },
+                    {
+                        "name": "VAR",
+                        "code": "var"
+                    }
+                ],
+                "timeGroup": [
+                    {
+                        "name": "YEAR",
+                        "code": "year"
+                    },
+                    {
+                        "code": "month",
+                        "name": "MONTH"
+                    },
+                    {
+                        "name": "Quarter",
+                        "code": "quarter"
+                    },
+                    {
+                        "name": "Week",
+                        "code": "week"
+                    },
+                    {
+                        "code": "day",
+                        "name": "DAY"
+                    },
+                    {
+                        "code": "hour",
+                        "name": "Hour"
+                    },
+                    {
+                        "code": "minute",
+                        "name": "Minute"
+                    },
+                    {
+                        "code": "seconds",
+                        "name": "Seconds"
+                    }
+                ],
+                "time": {
+                    "isSupportSelectDateFields": false,
+                    "default": "past",
+                    "items": [
+                        {
+                            "code": "today",
+                            "name": "Today"
+                        },
+                        {
+                            "name": "Yesterday",
+                            "code": "yesterday"
+                        },
+                        {
+                            "code": "this_week",
+                            "name": "This week"
+                        },
+                        {
+                            "name": "Last week",
+                            "code": "last_week"
+                        },
+                        {
+                            "code": "this_month",
+                            "name": "This month"
+                        },
+                        {
+                            "name": "Last month",
+                            "code": "last_month"
+                        },
+                        {
+                            "configs": {
+                                "min": 1,
+                                "isIncludeToday": false,
+                                "max": 999
+                            },
+                            "type": "number",
+                            "name": "Last ... Days",
+                            "code": "past"
+                        },
+                        {
+                            "code": "custom_today",
+                            "type": "single",
+                            "name": "Customize date to today"
+                        },
+                        {
+                            "code": "custom",
+                            "name": "Customize date",
+                            "type": "range"
+                        },
+                        {
+                            "name": "All time",
+                            "code": "all_time"
+                        }
+                    ]
+                },
+                "filter": {
+                    "commands": [
+                        {
+                            "request": {
+                                "params": [
+                                    "dsConnectionId",
+                                    "time",
+                                    "field"
+                                ]
+                            },
+                            "provider": "googleanalysis",
+                            "id": "dimensionValues",
+                            "response": {
+                                "type": "list"
+                            }
+                        }
+                    ],
+                    "date": {
+                        "options": [
+                            {
+                                "cType": "multipleList",
+                                "code": "equal",
+                                "name": "完全匹配",
+                                "command": "dimensionValues"
+                            },
+                            {
+                                "cType": "multipleList",
+                                "code": "not_equal",
+                                "name": "不匹配",
+                                "command": "dimensionValues"
+                            },
+                            {
+                                "name": "包含",
+                                "code": "contain",
+                                "cType": "tagInput"
+                            },
+                            {
+                                "code": "not_contain",
+                                "cType": "tagInput",
+                                "name": "不包含"
+                            },
+                            {
+                                "cType": "regex",
+                                "code": "regex_match",
+                                "name": "正则匹配"
+                            },
+                            {
+                                "name": "正则不匹配",
+                                "cType": "regex",
+                                "code": "regex_not_match"
+                            }
+                        ],
+                        "default": "equal"
+                    },
+                    "number": {
+                        "options": [
+                            {
+                                "cType": "inputNumber",
+                                "name": "大于",
+                                "code": "gt"
+                            },
+                            {
+                                "cType": "inputNumber",
+                                "name": "大于等于",
+                                "code": "ge"
+                            },
+                            {
+                                "cType": "inputNumber",
+                                "name": "小于",
+                                "code": "lt"
+                            },
+                            {
+                                "name": "小于等于",
+                                "code": "le",
+                                "cType": "inputNumber"
+                            },
+                            {
+                                "code": "equal",
+                                "name": "等于",
+                                "cType": "inputNumber"
+                            },
+                            {
+                                "cType": "inputNumber",
+                                "name": "不等于",
+                                "code": "not_equal"
+                            }
+                        ]
+                    },
+                    "string": {
+                        "options": [
+                            {
+                                "name": "Select",
+                                "code": "select",
+                                "items": [
+                                    {
+                                        "cType": "multipleList",
+                                        "code": "equal",
+                                        "command": "dimensionValues",
+                                        "name": "包含"
+                                    },
+                                    {
+                                        "cType": "multipleList",
+                                        "command": "dimensionValues",
+                                        "code": "not_equal",
+                                        "name": "不包含"
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Advance",
+                                "code": "advance",
+                                "items": [
+                                    {
+                                        "cType": "tagInput",
+                                        "code": "equal",
+                                        "name": "完全匹配"
+                                    },
+                                    {
+                                        "cType": "tagInput",
+                                        "code": "not_equal",
+                                        "name": "不匹配"
+                                    },
+                                    {
+                                        "code": "contain",
+                                        "cType": "tagInput",
+                                        "name": "包含"
+                                    },
+                                    {
+                                        "cType": "tagInput",
+                                        "name": "不包含",
+                                        "code": "not_contain"
+                                    },
+                                    {
+                                        "cType": "regex",
+                                        "code": "regex_match",
+                                        "name": "正则匹配"
+                                    },
+                                    {
+                                        "name": "正则不匹配",
+                                        "cType": "regex",
+                                        "code": "regex_not_match"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                },
+                "graphs": [
+                    {
+                        "name": "Table",
+                        "code": "table"
+                    },
+                    {
+                        "code": "column",
+                        "name": "Column"
+                    },
+                    {
+                        "name": "Bar",
+                        "code": "bar"
+                    },
+                    {
+                        "code": "stackColumn",
+                        "name": "StackColumn"
+                    },
+                    {
+                        "code": "stackBar",
+                        "name": "StackBar"
+                    },
+                    {
+                        "code": "line",
+                        "name": "Line"
+                    },
+                    {
+                        "code": "area",
+                        "name": "Area"
+                    },
+                    {
+                        "name": "DoubleAxis",
+                        "code": "doubleAxis"
+                    },
+                    {
+                        "code": "pie",
+                        "name": "Pie"
+                    },
+                    {
+                        "code": "number",
+                        "name": "Number"
+                    },
+                    {
+                        "code": "progressbar",
+                        "name": "progressbar"
+                    },
+                    {
+                        "name": "Map",
+                        "code": "map"
+                    }
+                ],
+                "map": {
+                    "countryFields": [
+                        {
+                            "id": "51",
+                            "name": "Country",
+                            "code": "ga:country"
+                        }
+                    ],
+                    "mapType": [
+                        {
+                            "code": "world",
+                            "name": "World"
+                        },
+                        {
+                            "code": "country",
+                            "name": "Country"
+                        }
+                    ],
+                    "cityFields": [
+                        {
+                            "code": "ga:region",
+                            "name": "Region",
+                            "id": "52"
+                        }
+                    ]
+                }
+            },
+            "datasource": {
+                "commands": [
+                    {
+                        "request": {
+                            "params": [
+                                "account.id",
+                                "account.name"
+                            ]
+                        },
+                        "id": "profile",
+                        "response": {
+                            "type": "tree"
+                        },
+                        "provider": "googleanalysis"
+                    }
+                ],
+                "view": {
+                    "steps": [
+                        {
+                            "bindTo": "account",
+                            "output": [
+                                "id",
+                                "name"
+                            ],
+                            "name": "account",
+                            "description": "",
+                            "placeholder": "请选择账户",
+                            "text": "账户",
+                            "componentType": "list",
+                            "type": "account",
+                            "connect": {
+                                "type": "oAuth"
+                            }
+                        },
+                        {
+                            "name": "profile",
+                            "bindTo": "profile",
+                            "type": "profile",
+                            "componentType": "tab",
+                            "text": "档案",
+                            "output": [
+                                "id"
+                            ],
+                            "description": "",
+                            "placeholder": "请选择档案",
+                            "command": "profile"
+                        },
+                        {
+
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}

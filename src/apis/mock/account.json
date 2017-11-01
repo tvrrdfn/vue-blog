@@ -1,0 +1,95 @@
+{
+    "success": true,
+    "data": [
+        {
+            "id": "4ad7eba2-4a51-4cd3-b6b4-7906e7630a52",
+            "name": "sylphlili@ptmind.com",
+            "displayName": "sylphlili@ptmind.com",
+            "uid": "149",
+            "configurations": {
+                "clientId": "1035821915519-9a559lo2aa3tpic4thinbuppbpeu1aqn.apps.googleusercontent.com",
+                "expireTime": "1484819597275",
+                "refreshToken": "1/njPO_fVb_VstVd_Z50AiNGF9FfdL1SnAWleOyRlksoA",
+                "provider": "googleanalysis",
+                "clientSecret": "tX6XhF49clwR8dJpqlXa3-K1",
+                "paypalConfig": {
+                    "status": "success"
+                },
+                "accountName": "sylphlili@ptmind.com",
+                "accessToken": "ya29.GlvYA4dMde0SUWh0XjsOeKYy_bXmzzEbtjbnAjCFZkPoJ_vyDxcDTy6E3HCzBXI8bvRu4sSO8bClp500kZzyaWu0defjaKUiYmHMzghQRcG5OBNqeBnJ4_3pVUa6"
+            }
+        },
+        {
+            "id": "dca4cf3e-501b-4c10-b70f-2269e8d8f958",
+            "name": "dawn@ptmind.com",
+            "displayName": "dawn@ptmind.com",
+            "uid": "149",
+            "configurations": {
+                "provider": "googleanalysis",
+                "clientSecret": "tX6XhF49clwR8dJpqlXa3-K1",
+                "expireTime": "1484817147803",
+                "paypalConfig": {
+                    "status": "success"
+                },
+                "accessToken": "ya29.GlvYAzAm1sXQzg0Go2Uejs5NtJEBXy7iVgn0evdn_5jZ91QsPFiPMP3cuJ9WxrfkZWh9XTWb9wiZYmuLnDriLfjepmdjmw-p9W7DMk81W4s_RY5EAu3aKmS9_RX4",
+                "refreshToken": "1/bAvO8Z0kZTB9tjlVzz1jBSPfpTAIAUbAaQgH0M-gOXs",
+                "clientId": "1035821915519-9a559lo2aa3tpic4thinbuppbpeu1aqn.apps.googleusercontent.com",
+                "accountName": "dawn@ptmind.com"
+            }
+        },
+        {
+            "id": "91fd6a61-e5de-4bf2-b35f-dd4b7a41c6d3",
+            "name": "zhangandy19880228@gmail.com",
+            "displayName": "zhangandy19880228@gmail.com",
+            "uid": "149",
+            "configurations": {
+                "refreshToken": "1/9nbNoxeDqEvxjc1w661Dy4I1qQQzABRfhZhnDaEx204",
+                "clientId": "1035821915519-9a559lo2aa3tpic4thinbuppbpeu1aqn.apps.googleusercontent.com",
+                "paypalConfig": {
+                    "status": "success"
+                },
+                "provider": "googleanalysis",
+                "clientSecret": "tX6XhF49clwR8dJpqlXa3-K1",
+                "expireTime": "1483511101827",
+                "accountName": "zhangandy19880228@gmail.com",
+                "accessToken": "ya29.Ci_JA_X2EQYZObv_nVk98vWBd6AEHmbWaoPlrbGORwv_dtHXQkgkeR-o8uo5IGXedQ"
+            }
+        },
+        {
+            "id": "ea8498ac-b31d-4c9c-9a3c-5a988374f6bd",
+            "name": "marketing@ptengine.com",
+            "displayName": "marketing@ptengine.com",
+            "uid": "149",
+            "configurations": {
+                "accountName": "marketing@ptengine.com",
+                "clientId": "1035821915519-9a559lo2aa3tpic4thinbuppbpeu1aqn.apps.googleusercontent.com",
+                "accessToken": "ya29.GlvyA6DxjsLmRE_tsYMt6izne-C1Hzxeahk4RkipCvkvw1My6jObFrEMJvag8mV4TyMdVaJWeG9H5-ClbLmpB_KjuyuoVW-cjFrmKEhzY9CCCRPUvKlRU9x7Euf4",
+                "refreshToken": "1/2CqaV8bTRdSv_KMak-laHoDtLFMY_DK5cDJzQCK88vecAuef6Ndx-3h98H7EZoRu",
+                "expireTime": "1487069980000",
+                "paypalConfig": {
+                    "status": "success"
+                },
+                "provider": "googleanalysis",
+                "clientSecret": "tX6XhF49clwR8dJpqlXa3-K1"
+            }
+        },
+        {
+            "id": "4e4ae4a0-dc7f-45cf-b22a-e40cde89eb4d",
+            "name": "peterangel536@gmail.com",
+            "displayName": "peterangel536@gmail.com",
+            "uid": "149",
+            "configurations": {
+                "clientSecret": "tX6XhF49clwR8dJpqlXa3-K1",
+                "accessToken": "ya29.GlsOBCceVtHk36iuo5BZNowH-q7flgYJmi1HUbv1-XxgyBg7hcpK3kKbH7GLZyWfPoEE_9r_IR61NIKkE5ljNJa6OvI_xLzPLjiJaC_H31UXX8RDLe2IiTtWa8tB",
+                "provider": "googleanalysis",
+                "clientId": "1035821915519-9a559lo2aa3tpic4thinbuppbpeu1aqn.apps.googleusercontent.com",
+                "paypalConfig": {
+                    "status": "success"
+                },
+                "expireTime": "1489485606526",
+                "refreshToken": "1/nQw1b4NrSQH7H72mrxImEVMERNUdKQKKv2uuIQ9OopM",
+                "accountName": "peterangel536@gmail.com"
+            }
+        }
+    ]
+}

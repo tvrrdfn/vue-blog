@@ -1,0 +1,608 @@
+{
+	"locales": {
+		"zh-CN": "CN",
+		"en-US": "EN",
+		"ja-JP": "JP"
+	},
+
+    "common":{
+        "save":"保存",
+        "discard": "破棄",
+        "search": "検索",
+        "cancel": "キャンセル",
+        "close":"閉じる",
+        "apply": "適用",
+        "switch":"切替確認",
+        "confirm": "確認",
+        "no_data":"データが見つかりません",
+        "no_search_data":"一致する内容が見つかりません",
+        "remove":"削除",
+        "or":"Or",
+        "and":"And",
+        "auto":"オート",
+        "loading": "ローディング中...",
+        "on": "On",
+        "off": "Off",
+        "skip":"スキップ",
+        "loading_error":"ネット環境の影響でうまく接続できません。しばらく経ってから",
+        "retry":"もう一度お試しください",
+        "widget_list_error1":"ダッシュボードのローディングが失敗しました、",
+        "widget_list_error2":"リフレッシュ",
+        "widget_list_error3":"してください。",
+        "form":{
+            "email":"メールアドレス",
+            "password":"パスワード",
+            "email_placeholder":"",
+            "password_placeholder":"パスワードを入力してください",
+            "old_password":"現在のパスワード",
+            "new_password":"新しいパスワード",
+            "confirm_password":"新しいパスワードの再入力",
+            "submit":"確定",
+            "error":{
+                "password_null":"パスワードを入力してください",
+                "password_length":"6-20文字以内の半角英数字で入力してください。",
+                "password_not_right":"パスワードが間違っています。",
+                "password_not_match":"設定可能なパスワードの条件は半角英数字と記号だけです。",
+                "new_old_not_match":"入力したパスワードが間違っています。",
+                "email_null":"メールアドレスを入力してください",
+                "email_not_match":"登録メールアドレスを正しく入力してください",
+                "email_not_exist":"このメールアドレスは存在していません",
+                "email_already_exist":"このメールアドレスは既に存在しています",
+                "system_error":"System Error!"
+            }
+        },
+        "operationError": "操作エラー",
+        "knowledge_base": "サポート",
+        "data_type": {
+            "STRING": "テキスト",
+            "DATE": "日付",
+            "TIME": "時間",
+            "DATETIME": "日時",
+            "DURATION": "経過時間",
+            "NUMBER": "数値",
+            "PERCENT": "パーセント",
+            "BOOLEAN": "ぶーりあん",
+            "TIMESTAMP": "タイムスタンプ"
+        }
+    },
+
+    "dashboard": {
+        "add_widget": "新規ウィジェット",
+        "chart": "グラフ",
+        "richText": "リッチテキスト",
+        "heatmap": "Ptengineヒートマップ",
+        "header": {
+            "time": "ダッシュボード表示期間",
+            "filter": "ダッシュボードフィルター",
+            "copy": "ダッシュボードのコピー",
+            "share": "シェアURL",
+            "info": "詳細",
+            "refresh": "データ更新",
+            "delete": "ダッシュボードの削除",
+            "refreshTip": "データが20分ごとに自動的に更新されます。前回のデータ更新時間: {time}",
+            "updateSuccess": "更新完了",
+            "updateFailed": "面板更新失败"
+        },
+        "tips":{
+            "no_datasource":{
+                "title":"まだデータソースが接続されていません。ダッシュボードを作成する前に、利用したいデータソースを接続しましょう。",
+                "item1_title":"データソース",
+                "item1_content":"クラウドサービスやデータベース、ローカルデータなど、ご利用のデータに接続することができます。"
+            },
+            "no_panel":{
+                "title":"ダッシュボードがありません。早速作成しましょう。",
+                "item1_title":"ダッシュボード",
+                "item1_content":"重要なデータを美しく、リアルタイムにビジュアライズします。使いやすいようにカスタマイズし、あなたのビジネスを可視化しましょう。"
+            },
+            "no_widget":{
+                "title":"まだウィジェットが作成されていません。以下の種類から選択し、ウィジェットを新規作成してください。",
+                "item1_title":"グラフ",
+                "item1_content":"グラフを使ってデータを可視化しましょう。",
+                "item2_title":"リッチテキスト",
+                "item2_content":"テキストだけではく、画像と動画のダッシュボードも作成できます。",
+                "item3_title":"ヒートマップ",
+                "item3_content":"Ptengineヒートマップをダッシュボードに追加しましょう。"
+            }
+        },
+        "noauthority":{
+            "title": "ダッシュボードの閲覧権限がありません",
+            "detail1": "このダッシュボードは ",
+            "detail2":"スペースに属しています。お手数ですが、スペースに招待されているアカウントで再度ログインしてください。",
+            "switch_account": "別のアカウントでログイン",
+            "current_account": "今のアカウントをこのまま利用する"
+        }
+    },
+
+    "widget": {
+        "info": {
+            "title": "ウィジェットの詳細",
+            "name": "ウィジェット名",
+            "dsName": "データソース"
+        },
+        "edit": "編集",
+        "copy": "コピー",
+        "moveTo": "移動",
+        "delete": "削除",
+        "move": {
+            "title": "このウィジェットをダッシュボードへ移動する",
+            "move": "移動"
+        },
+        "deleteConfirm": {
+            "title": "ウィジェットの削除",
+            "content": "このウィジェットを削除しますか？"
+        }
+    },
+
+    "share": {
+        "error": {
+            "pwdRequired": "パスワードを入力してください",
+            "pwdError": "登録メールアドレスまたはパスワードが間違っています"
+        },
+        "pwdPlaceholder": "パスワード",
+        "viewDashboard": "ダッシュボードを見る",
+        "pwdTitle": "このダッシュボードのシェアURLを暗号化します",
+        "pwdTitleTip": "パスワードを設定すると、シェアURLを開く際にパスワードを求められます。",
+        "error_tips":{
+            "tips1":"共有URLが無効です",
+            "tips2":"URL共有されていない、もしくは該当ダッシュボードは既に削除されています。",
+            "tips3":"DataDeckに戻る"
+        },
+        "share": "SNSで共有"
+    },
+
+    "widget_editor": {
+        "header": {
+            "back": "ダッシュボードに戻る",
+            "chose_ds": "データソース: ",
+            "save_tips_title":"このウィジェットは現在編集中です",
+            "save_tips_content": "保存せずに戻ると編集内容は破棄されます。ウィジェットへの変更内容を保存しますか？",
+            "chose_ds_title":"データソースの選択",
+            "chose_ds_tab_connection": "Connection",
+            "chose_ds_tab_dataset": "Dataset",
+            "chose_ds_datasource": "データソース",
+            "dataset_preview": "preview",
+            "auth_ds_tips1": "他のデータソースに切り替えると、ウィジェットの内容はリセットされます。よろしいですか？",
+            "no_ds_tips1": "データソースが見つかりません。",
+            "no_ds_tips2": "データソース管理",
+            "no_ds_tips3": "画面にて連携を行ってください。",
+            "connect_ds1": "",
+            "connect_ds2": "と連携",
+            "default_name": "名称未設定"
+        },
+        "graph":{
+            "no_data_tips_1":"指標とグラフを選択し、新しいウィジェットを作成しましょう。"
+        },
+        "aside": {
+            "title_left": "データ",
+            "title_right": "表示設定",
+            "add_btn":"追加",
+            "drag_drop": "こちらにドラッグしてください",
+            "drag_segment": "こちらにドラッグしてください",
+            "refused_drag": "ドラッグできません",
+            "drag_drop_replace": "ドラッグ&ドロップで指標を変更",
+            "custom_fields": "計算指標",
+            "zoom_area":"区域",
+            "position_field": "位置フィールド",
+            "country": "国",
+            "sort":"ソート",
+            "sort_by":"ソート",
+            "sort_ascending":"昇順 (A→Z)",
+            "sort_descending":"降順 (Z→A)",
+            "sort_default_sequence":"デフォルト",
+            "filter_all":"すべて選択",
+            "filter_apply_tip":"抽出条件を指定してください",
+            "filter_x_selected":"個が選択された",
+            "label":"表示名",
+            "description": "備考欄",
+            "summarize":"集計方法",
+            "time_granularity":"期間表示",
+            "title":{
+                "category":"カテゴリ",
+                "value": "指標",
+                "x_axis": "X軸",
+                "y_axis": "Y軸",
+                "legend":"凡例",
+                "left_y_axis":"左Y軸",
+                "right_y_axis":"右Y軸",
+                "filter":"フィルター",
+                "segment":"セグメント",
+                "target":"目標値",
+                "target_placeholder":"目標値を入力してください"
+            },
+            "time_range":{
+                "include_today":"今日を含む",
+                "date_range":"期間",
+                "date_field":"日付フィールド",
+                "last":"過去",
+                "days":"日間",
+                "custom_today1":"",
+                "custom_today2":"から今日まで",
+                "today":"今日",
+                "yesterday":"昨日",
+                "this_week":"今週",
+                "last_week":"先週",
+                "this_month":"今月",
+                "last_month":"先月",
+                "all_time":"全期間"
+            },
+            "segment":{
+                "segment":"セグメントビルダー",
+                "add_new_segment":"セグメントを追加",
+                "save_segment_in_GA":"Google Analyticsで保存されているセグメント",
+                "edit_segment":"編集",
+                "remove_segment_title":"セグメントの削除",
+                "remove_segment_tip":"このセグメントを削除すると、全てのウィジェットに影響されます。セグメントを削除してもよろしいですか？",
+                "segment_name":"タイトル",
+                "default_name":"名称未設定のセグメント",
+                "select_a_field":"指標を選択",
+                "condition_setting":"指標設定",
+                "segment_tips":"セグメントの条件を設定してください",
+                "switch_tip1":"セグメント条件を変更すると、このセグメントを利用している全てのウィジェットに影響されます。セグメント条件を変更してもよろしいですか？",
+                "switch_tip2":""
+            },
+            "style":{
+                "legend_max": "カテゴリー",
+                "show_date": "日付表示",
+                "double_axis" :{
+                    "title_left": "左Y軸",
+                    "title_right": "右Y軸",
+                    "chart": "グラフ種類",
+                    "show_label": "データラベルを表示",
+                    "show_axis": "Y軸を表示",
+                    "axis_min": "Y軸の最小値",
+                    "axis_max": "Y軸の最大値"
+                },
+                "show_label": "データラベルを表示",
+                "bars_x": "X軸",
+                "bars_y": "Y軸",
+                "series": "凡例",
+                "region_name": "地域名を表示",
+                "show_colored_by": "凡例を表示",
+                "reverse": "リーバスターゲット",
+                "reverse_tip":"リーバスターゲットは即ちターゲット値が小さいほど良くなるという意味です",
+                "show_others": "その他で表示",
+                "show_total": "数値表示",
+                "total_value": "次のフィールドを表示する",
+                "total_value_tip":"数値とは、ご指定期間内の数値合計値を指します。",
+                "show_y_axis": "Y軸を表示",
+                "show_x_axis": "X軸を表示",
+                "axis_min_y": "Y軸の最小値",
+                "axis_max_y": "Y軸の最大値",
+                "axis_min_x": "X軸の最小値",
+                "axis_max_x": "X軸の最大値",
+                "no_settings": "設定できるスタイルがありません"
+            }
+        },
+
+        "error": {
+            "MSG_NOT_SELECT_FIELD":"指標とグラフを選択し、新しいウィジェットを作成しましょう",
+            "MSG_NO_DATA":"データはありません",
+            "MSG_FAILED":"データの読み込みが失敗しました。もう一度更新してみてください。",
+            "MSG_FAILED1": "データの読み込みが失敗しました。もう一度",
+            "MSG_FAILED2": "更新",
+            "MSG_FAILED3": "してみてください。",
+            "MSG_NO_AUTH":"連携するデータソースが見つかりません。",
+            "MSG_GD_NO_ACCOUNT_AUTH":"連携するデータソースが見つかりません。",
+            "MSG_GA_NO_ACCOUNT_AUTH":"連携するデータソースが見つかりません。",
+            "MSG_GD_NO_SOURCE_AUTH":"連携するデータソースが見つかりません。",
+            "MSG_GD_NO_SOURCE_EXISTS":"連携するデータソースが見つかりません。",
+            "MSG_GA_NO_PROFILE_EXISTS":"連携するデータソースが見つかりません。",
+            "MSG_DB_UNKNOWN_TABLE":"連携するデータソースが見つかりません。",
+            "MSG_DB_NO_ACCOUNT_AUTH":"連携するデータソースが見つかりません。",
+            "MSG_DB_NO_SOURCE_AUTH":"連携するデータソースが見つかりません。",
+            "MSG_S3_ACCESS_DENIED":"連携するデータソースが見つかりません。",
+            "MSG_SALESFORCE_REPORT_NOT_FOUND":"連携するデータソースが見つかりません。",
+            "MSG_DB_LINK_FAILURE":"連携するデータソースが見つかりません。",
+            "MSG_DB_ACCESS_DENIED":"連携するデータソースが見つかりません。",
+            "MSG_DB_UNKNOWN_DATABASE":"連携するデータソースが見つかりません。",
+            "MSG_BAD_REQUEST":"データの読み込みが失敗しました。",
+            "MSG_PTENGINE_METRICS_DIMENSIONS_NOT_MATCH":"このデータソースでは、2つ以上のフィールドを同時に検索することはできません。",
+            "MSG_GA_METRICS_DIMENSIONS_NOT_MATCH":"このデータソースでは、2つ以上のフィールドを同時に検索することはできません。",
+            "MSG_FACEBOOKAD_OUTOF_DELIVERYSIZE":"このデータソースでは、2つ以上のフィールドを同時に検索することはできません。",
+            "MSG_FACEBOOKAD_OUTOF_ACTIONSIZE":"このデータソースでは、2つ以上のフィールドを同時に検索することはできません。",
+            "MSG_GA_NOT_EXCEED_10_METRIC_7_DIMENSION":"Google Analyticsでは、1つのAPIリクエストに対し、最大7個のディメンションと10個の指標まで設定できます。",
+            "MSG_NOT_SELECT_METRICS":"指標を選択してください",
+            "MSG_GA_USER_SEGMENTS_NOT_EXCEED_90_DAYS":"新しいフィルタを作成するとき、期間は90日以内で指定してください。",
+            "MSG_GA_FILTER_REGEX_NOT_EXCEED_128_CHAR":"Google Analyticsで正規表現フィルターを使用する場合、正規表現の設定に使用できる文字数は、最大128文字までです。",
+            "MSG_INVALID_PREDICATE_FIELD_NAME":"Google Adwordsでは、フィルター条件を設定する場合、X軸またはY軸で使用するフィールドを設定してください。",
+            "MSG_FACEBOOKAD_ACCESSTOKEN_EXPIRED1":"Facebook Adsとのアカウント連携の期限は過ぎています。",
+            "MSG_FACEBOOKAD_ACCESSTOKEN_EXPIRED2":" Facebook Ads管理の設定画面から",
+            "MSG_FACEBOOKAD_ACCESSTOKEN_EXPIRED3":"もう一度アカウント連携を行ってください。",
+            "MSG_DB_UNKNOWN_COLUMN":"該当するデータがありません。データソースをご確認ください。",
+            "MSG_REPORT_DIMENSION_SELECTED_ERROR":"ご指定のフィールドに対して、データの連携ができません。サマリーとメトリクスの形式のレポートに関しては、salesforceでデータ取得の許可を得たもののみダッシュボードで表示可能です。",
+            "MSG_YAHOO_DATE_CAN_NOT_EXCEED_13_MONTHS":"Yahoo Ads YDNのデータソースにおけて当日を含めて13ヶ月以上の期間指定はできません。データ表示期間を変更してください。",
+            "MSG_YAHOO_DATE_CAN_NOT_INCLUDE_TODAY":"Yahoo Ads YDNのデータソースにおけて当日を含めて13ヶ月以上の期間指定はできません。データ表示期間を変更してください。",
+            "MSG_ALESFORCE_SOBJECT_SOQL_WHERE_LENGTH_OUTOF":"Salesforceでフィルター機能を使用する場合、フィルターの条件として設定できる文字数は最大4,000文字です。",
+            "MSG_GA_EXPRESSION_TOTAL_NOT_EXCEED_4096_CHAR":"フィルター条件は4,096個まで設定できます。",
+            "MSG_GA_SEGMENT_NOT_EXIST":"Google Analyticsでは、ご利用になるセグメントを見つけることができませんでした。もしくは該当セグメントの利用権限がありません。",
+
+            "MSG_SALESFORCE_DS_SELECT_NO_PERMISSION1":"Salesforceでは、ご利用中のアカウントでご指定したデータソースと連携する権限がありません、権限があるアカウントで",
+            "MSG_SALESFORCE_DS_SELECT_NO_PERMISSION2":"ータソース連携してください",
+            "MSG_SALESFORCE_DS_SELECT_NO_PERMISSION3":"。",
+            "MSG_SALESFORCE_DS_SELECT_NO_PERMISSION4":"ダッシュボードに戻る",
+            "MSG_DB_ILLEGAL_USE_LONG_DATATYPE": "Illegal use of LONG datatype"
+        }
+    },
+    "panel": {
+        "filter": {
+            "add": "フィルターの追加",
+            "keep": "ダッシュボードにキープ",
+            "back": "戻る",
+            "save_scuccess": "保存しました",
+            "create_success": "追加しました",
+            "keep_tip": "保存したフィルターをダッシュボードにキープすれば、閲覧権限のあるメンバー全員はフィルタリングした結果を見ることができます。",
+            "is_empty": "現在データはありません",
+            "is_not_exist": "このフィルターは無効状態です。設定されたフィルターの条件はご利用中のダッシュボードに連携したデータソースデータに適応しているかどうか、ご確認ください。"
+        },
+
+        "dashboard": {
+            "dashboard": "ダッシュボード",
+            "deleteDashboard": "ダッシュボードの削除",
+            "duplicateDashboard": "ダッシュボードのコピー",
+            "sharedLink": "シェアURL",
+            "dashboardDetails": "ダッシュボードの詳細",
+            "rename": "ダッシュボード名の変更",
+            "folder": "フォルダ",
+            "untitledDashboard": "無題のダッシュボード",
+            "untitledFolder": "無題のフォルダ",
+            "manageData": "データソース管理",
+
+            "deleteFolder": "フォルダの削除",
+            "confirmDeleteDashboard_1": "この“",
+            "confirmDeleteDashboard_2": "”ダッシュボードを削除してもよろしいですか？",
+
+            "deleteFolder": "フォルダの削除",
+            "confirmDeleteFolder_1": "この“",
+            "confirmDeleteFolder_2": "”フォルダを削除すると、フォルダ内のダッシュボードはすべて削除されてしまいます。本当に削除しますか？",
+
+            "title": "ダッシュボード名",
+            "description": "備考欄",
+
+            "noDashboards": "ダッシュボードがありません",
+            "panelNoExist": "ダッシュボードあるいはフォルダがすでに存在しません。"
+        },
+
+        "panelDetail": {
+            "dashboardDetails": "ダッシュボードの詳細",
+            "title": "ダッシュボード名",
+            "created": "作成情報",
+            "lastModified": "最終更新情報",
+            "description": "備考欄",
+            "delete": "削除"
+        },
+
+        "sharedLink": {
+            "publicShareLink": "URL共有設定",
+            "enableShareLink": "共有をオンにする",
+            "copyThisURLToShare": "共有可能なURLを取得",
+            "copy": "コピー",
+            "copiedToClipboard": "URLをクリップボードにコピーしました",
+            "passwordProtect": "このシェアURLを暗号化します",
+            "pleaseEnterPassword": "パスワード",
+            "passwordSavedSuccessfully": "パスワードを保存しました"
+        }
+    },
+
+    "charts": {
+        "rich_text": {
+            "placeholder": "ダブルクリックをしてリッチテキストを追加します",
+            "tips_size":"アップロードした画像ファイルは大きすぎます。300k以内にしてください。",
+            "tips_format": "対応している画像ファイル形式：JPEG/PNG/GIF"
+        },
+        "heatmap": {
+            "title": "- Ptengineヒートマップ -",
+            "label_name": "ヒートマップ名",
+            "default_name": "名称未設定",
+            "label_title": "PtengineヒートマップのシェアURL",
+            "help_tips": "Ptengineのヒートマップ画面で、「シェア」ボタンをクリックし、発行されたシェアURLをこちらに貼り付けてください。<a href=\"{moreUrl}\" target=\"_blank\">詳しくはこちらへ</a>",
+            "placeholder": "PtengineヒートマップのシェアURLを貼り付けてください。",
+            "page_title": "タイトル：",
+            "page_time": "計測範囲：",
+            "page_filter": "フィルター条件：",
+            "error_url": "貼り付けたURLが間違っています。Ptengineヒートマップ画面より発行されたシェアURLをもう一度ご確認ください。<a href=\"{moreUrl}\" target=\"_blank\">詳しくはこちらへ</a>",
+            "error_phone_url": "貼り付けたURLが間違っています。もう一度ご確認の上、シェアURLを貼り直してください。",
+            "error_http_tip1": "ご利用のブラウザではページコンテンツが正しく表示されません。<br>次のことを試してください。",
+            "error_http_tip2": "ChromeまたはFirefoxをご利用の場合、アクセスバーのところにシールドアイコン <span class=\"chrome\"></span> もしくはロックアイコン <span class=\"firefox\"></span> をクリックし、スクリプトの読み込みに許可してください。<a href=\"{moreHttps}\" target=\"_blank\">詳しくはこちらへ</a>",
+            "error_http_tip3": "ヒートマップの <a href=\"{heatmapUrl}\" target=\"_blank\">ウェブビュー機能</a>。を利用してください。",
+            "error_http_phone_tip1": "ご利用のブラウザではページコンテンツが正しく表示されません。<br>次のことを試してください。",
+            "error_http_phone_tip2": "ヒートマップの <a href=\"{heatmapUrl}\" target=\"_blank\">ウェブビュー機能</a>。を利用してください。",
+            "error_http_phone_tip3": "パソコンからアクセスをする場合、ChromeまたはFirefoxをご利用ください。"
+        }
+    },
+
+    "signin":{
+        "email":"登録メールアドレス",
+        "password":"パスワード",
+        "remember_me":"パスワードを記録",
+        "log_in":"ログイン",
+        "return_to_login":"ログイン画面へ戻る",
+        "forgot_password":"パスワードを忘れた方",
+        "signup":"新しいアカウントを作成",
+        "error_tips":{
+            "email_format":"登録メールアドレスを正しく入力してください",
+            "user_or_password_not_right":"メールアドレスかパスワードが間違っています",
+            "user_not_right":"このメールアドレスは存在していません"
+        },
+        "newAccount": "アカウントを新規取得"
+    },
+
+    "signup":{
+        "MSG_SALESFORCE_DS_SELECT_NO_PERMISSION4":"返回面板",
+        "MSG_DB_ILLEGAL_USE_LONG_DATATYPE": "Illegal use of LONG datatype"
+    },
+    "forget_password":{
+        "submit": "送信",
+        "send_email_success":"パスワード再発行URLを登録メールアドレスに   送信しました。",
+        "title": "パスワードの再発行",
+        "email_no_activated_1":"本登録は完了していません。メール認証をしてください。メールが届かない場合、",
+        "email_no_activated_2":"再送します",
+        "email_no_activated_3":"。",
+        "email_no_exist":"このメールアドレスは存在していません",
+        "reset_password": {
+            "tip_1": "パスワード変更",
+            "tip_2": "入力したパスワードが間違っています。",
+            "tip_3": "パスワードの変更が完了しました。5秒後にログイン画面に戻ります。"
+        }
+    },
+    "space":{
+        "space_menu":{
+            "space_member":"スペースメンバー",
+            "space_detail":"スペース情報",
+            "space_ip": "ホワイトリスト",
+            "switch1":"",
+            "switch2":"に切替える"
+        },
+        "space_invite":{
+            "create_space":"アカウント作成",
+            "create_space_tip1":"スペース ",
+            "create_space_tip2":"に招待される前に、",
+            "create_space_tip3":"DataDeckのアカウントを作成してください。",
+            "create_space_rule1":"登録手続きを完了することにより、",
+            "create_space_rule2":"利用規約",
+            "create_space_rule3":"と",
+            "create_space_rule4":"プライバシーポリシー",
+            "create_space_rule5":"に同意したものとみなします",
+            "sign_up":"登録してスペースに入る"
+        },
+        "space_member":{
+            "title":"スペースメンバー",
+            "owner":"オーナー",
+            "remove_member1":"",
+            "remove_member2":"個のメンバーを削除",
+            "remove_member3":"",
+            "invite_success":"メンバー招待が成功しました",
+            "resend":"もう一度招待する",
+            "send": "送信",
+            "delete_success": "メンバー削除が完了しました",
+            "email_error":"正しいメールアドレスを入力してください",
+            "versions_error":"こちらのスペースに旧バージョンをご利用中のアカウントを招待することはできません。<a href=\"{helpLink}\" target=\"_blank\">詳細</a>",
+            "email_repeat":"このメンバーはすでに招待されています。"
+        },
+        "space_detail":{
+            "title":"ペース情報",
+            "space_title":"スペース名",
+            "space_domain":"スペースのURL",
+            "week_start":"週の開始日",
+            "sunday":"日曜日",
+            "monday":"月曜日",
+            "delete_space":"スペース削除",
+            "week_tip": "週の始まりを何曜日に設定するかにより、データ確認ができる期間が変わってきます。例えば、日曜日にする場合、「過去7日間」のデータ確認期間を指定します。そうしますと、日曜日から土曜日のグラフデータが表示されます。",
+            "error":{
+                "already_exit_domin":"このスペースのURLは既に存在しています。",
+                "domain_not_match":"アルファベットの小文字、数字、\"-\"、\"_\"のみ入力可能です。\"-\"または\"_\"を先頭に入れないでください。"
+            },
+            "intercom": "チャットでのお問い合わせサービスを有効に"
+        },
+        "space_delete":{
+            "title":"スペース削除",
+            "delete_space":"スペース削除",
+            "delete_tips_title":"スペースを削除する前に以下の内容を確認してください",
+            "delete_tips1":"該当スペースのすべてのダッシュボードとデータソースが削除されます。",
+            "delete_tips2":"すべてのシェアURLが無効になります。",
+            "delete_tips3":"該当スペースが存在せず、元に戻すこともできません。",
+            "delete_tips4":"スペースの削除に伴うことをもう一度確認してください。"
+        },
+        "space_invitation":{
+            "title":"スペースメンバーの招待",
+            "tip_1":"スペース作成が成功しました！",
+            "tip_2":"このスペースにメンバーを招待し、一緒にスペース内のデータ共有と管理することができます。",
+            "email_title":"招待メンバーのメールアドレスを入力してください",
+            "email_placeholder":"メールアドレスを入力してください",
+            "another_email":"ほかのメンバーを追加",
+            "send_invitation":"招待する"
+        },
+        "space_create":{
+            "title":"あなたのスペースを作成",
+            "space_title_tip":"あなた専用のスペース名とURLを教えてください。",
+            "space_title":"スペース名",
+            "space_domain":"スペースのURL",
+            "create_space":"スペースを作成",
+            "error": {
+                "title_null": "スペース名を入力してください。",
+                "domain_null": "スペースURLを入力してください。"
+            }
+        },
+        "invalidate":{
+            "tips1":"招待リンクの有効期限が切れています",
+            "tips2":"この招待リンクは有効期限が切れています。招待者にリンクの再発行を申請してください。",
+            "tips3":"DataDeckに戻る"
+        },
+        "space_ip": {
+            "title": "ホワイトリスト",
+            "sub_title": "現在のIPアドレス：<span>{ip}</span><br>注意：スペースオーナーに対して、IP制限は適用されません。また,発行された”シェアURL”に対しても適用されませんので十分ご注意ください。",
+            "add_tips": "閲覧できるIPアドレス",
+            "format_tips": "このスペースにアクセス可能なIPアドレスまたはIPレンジを入力してください。<br>例：<span>「10.0.0.1」</span> 、<span>「10.0.0.1-10.0.0.255」</span>など",
+            "ip_error_format": "正しいIPアドレスを入力してください。",
+            "ip_error_empty": "IPアドレスを入力してください。",
+            "ip_error_has_been": "このIPアドレスは既に設定されています。",
+            "add_success": "IPアドレスの追加が完了しました",
+            "delete_success": "IPアドレスの削除が完了しました",
+            "add_ip_btn": "追加",
+            "limit_title": "該当スペースにアクセスできません",
+            "limit_tips": "現在のIPアドレスではスペース「{spaceName}」にアクセスできません。スペースオーナーに連絡してください。",
+            "limit_switch_space": "ほかのスペースに切り替える",
+            "limit_switch_account": "アカウントを切り替える",
+            "limit_space_placeholder": "スペースを選択してください"
+        }
+    },
+    "account":{
+        "settings":"アカウント設定",
+        "log_out":"ログアウト",
+        "account_setting":{
+            "title":"アカウント設定",
+            "user_name":"ユーザー名",
+            "language":"言語",
+            "change_password":"パスワード変更",
+            "incorrectPassword": "パスワードが間違っています。"
+        }
+    },
+    "datasetHistroy": {
+        "updatetime": "期日を更新する。",
+        "description": "描写",
+        "result": "結果",
+        "updata_status": {
+            "success": "成功を更新する",
+            "failed": "失敗を更新する"
+        }
+    },
+    "datasetEtl": {
+        "column_placeholder": "Please select column",
+        "columnName_placeholder": "请输入名称",
+        "no_matched": "No matched",
+        "join": {
+            "join_type": "択るぶんかつひょう",
+            "match_columns": "択るせいごうするトレイン",
+            "more_column": "添加另一组匹配列",
+            "match_error": "请选择列"
+        },
+        "groupby": {
+            "catagory": "请选择分类字段",
+            "metric": "请选择用来聚合的值字段",
+            "more_column": "添加另一组匹配列",
+            "column": {
+                "field": "字段",
+                "summarized": "聚合方式",
+                "name": "值字段名称"
+            },
+            "group_match": {
+                "match_error": "请选择列"
+            },
+            "metric_match": {
+                "match_error": "请选择列",
+                "rename": "请输入字段名称"
+            }
+        },
+        "appendrow": {
+            "target": "请选择目标表格",
+            "match_column": "匹配列",
+            "un_match": "未匹配字段是否包含于输出合表中"
+        },
+        "selectcolumn": {
+            "title": "请选择你想要保留的列",
+            "column": "请选择列",
+            "columnName": "列名称",
+            "anther": "添加一列",
+            "all": "添加全部"
+        }
+    }
+}

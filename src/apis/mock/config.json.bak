@@ -1,0 +1,212 @@
+{
+    "data": {
+        "datasource":{
+            "commands":[
+                {
+                    "id":"profile",
+                    "provider":"googleanalysis",
+                    "request":{
+                        "params":["account.id", "account.name"]
+                    },
+                    "response":{
+                        "type":"tree"
+                    }
+                }
+            ],
+            "view": {
+                "steps": [{
+                    "name": "account",
+                    "text": "账户",
+                    "componentType": "list",
+                    "placeholder": "请选择账户",
+                    "description": "",
+                    "type":"account",
+                    "bindTo": "account",
+                    "output": ["id"]
+                },{
+                    "name": "profile",
+                    "text": "档案",
+                    "componentType": "tree",
+                    "placeholder": "请选择档案",
+                    "description": "",
+                    "type": "profile",
+                    "bindTo": "profile",
+                    "command": "profile",
+                    "output": ["id"]
+                }]
+            }
+
+        },
+        "widgetEditor": {
+            "time": {
+                "items": [
+                    {
+                        "code": "today",
+                        "name": "Today",
+                        "value": "xxx"
+                    },
+                    {
+                        "code": "yesterday",
+                        "name": "Yesterday",
+                        "value": "xxx"
+                    },
+                    {
+                        "code": "past",
+                        "name": "Last {num} Days",
+                        "type": "number",
+                        "configs": {
+                            "min": 1,
+                            "max": 999,
+                            "isIncludeToday": false
+                        }
+                    },
+                    {
+                        "code": "custom_today",
+                        "name": "Customize date to today",
+                        "type": "single"
+                    },
+                    {
+                        "code": "custom",
+                        "name": "Customize date",
+                        "type": "range"
+                    },
+                    {
+                        "code": "all_time",
+                        "name": "All time",
+                        "value": "xxx"
+                    }
+                ],
+                "fields": [
+                    {
+                        "id": 12,
+                        "name": "日期字段",
+                        "value": "xxx"
+                    },
+                    {
+                        "id": 13,
+                        "name": "日期字段02",
+                        "value": "xxx"
+                    }
+                ]
+            },
+            "calculateType": [
+                {
+                    "name": "SUM",
+                    "code": "sum"
+                },
+                {
+                    "name": "AVG",
+                    "code": "average"
+                },
+                {
+                    "name": "MAX",
+                    "code": "max"
+                },
+                {
+                    "name": "MIN",
+                    "code": "min"
+                },
+                {
+                    "name": "COUNTA",
+                    "code": "counta"
+                },
+                {
+                    "name": "COUNTUNIQUE",
+                    "code": "countunique"
+                },
+                {
+                    "name": "STDEV",
+                    "code": "stdev"
+                },
+                {
+                    "name": "VAR",
+                    "code": "var"
+                }
+            ],
+            "graphs": [
+                {
+                    "code": "table",
+                    "name": "Table"
+                },
+                {
+                    "code": "column",
+                    "name": "Column"
+                },
+                {
+                    "code": "bar",
+                    "name": "Bar"
+                },
+                {
+                    "code": "stackColumn",
+                    "name": "StackColumn"
+                },
+                {
+                    "code": "stackBar",
+                    "name": "StackBar"
+                },
+                {
+                    "code": "line",
+                    "name": "Line"
+                },
+                {
+                    "code": "area",
+                    "name": "Area"
+                },
+                {
+                    "code": "doubleAxis",
+                    "name": "DoubleAxis"
+                },
+                {
+                    "code": "pie",
+                    "name": "Pie"
+                },
+                {
+                    "code": "number",
+                    "name": "Number"
+                },
+                {
+                    "code": "progressbar",
+                    "name": "progressbar"
+                },
+                {
+                    "code": "map",
+                    "name": "Map"
+                }
+            ],
+            "timeGroup":  [
+                {
+                    "name": "YEAR",
+                    "code": "year"
+                },
+                {
+                    "name": "MONTH",
+                    "code": "month"
+                },
+                {
+                    "name": "Quarter",
+                    "code": "quarter"
+                },
+                {
+                    "name": "Week",
+                    "code": "week"
+                },
+                {
+                    "name": "DAY",
+                    "code": "day"
+                },
+                {
+                    "name": "Hour",
+                    "code": "hour"
+                },
+                {
+                    "name": "Minute",
+                    "code": "minute"
+                },
+                {
+                    "name": "Seconds",
+                    "code": "seconds"
+                }
+            ]
+        }
+    }
+}
